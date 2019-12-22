@@ -1,0 +1,222 @@
+[info]
+bio = """
+Open source enthusiast, Kotlin evangelist, Vim extraordinaire.
+"""
+email = "chronobserver@disroot.org"
+homepage = "https://observeroftime.github.io"
+name = "ObserverOfTime"
+resume = "https://github.com/ObserverOfTime/resume/releases/latest/download/Resume-EN.pdf"
+
+[links.social]
+# https://www.facebook.com/{facebook}
+facebook = ""
+# https://www.linkedin.com/in/{linkedin}
+linkedin = ""
+# https://reddit.com/user/{reddit}
+reddit = "ObserverOfTime"
+# https://trello.com/{trello}
+trello = "chronobserver"
+# https://www.tumblr.com/blog/{tumblr}
+tumblr = ""
+# https://www.twitch.tv/{twitch}
+twitch = ""
+# https://twitter.com/{twitter}
+twitter = "chronobserver"
+# https://www.youtube.com/user/{youtube}
+youtube = ""
+
+[links.vcs]
+# https://bitbucket.org/{bitbucket}
+bitbucket = ""
+# https://codeberg.org/{codeberg}
+codeberg = ""
+# https://framagit.org/{framagit}
+framagit = ""
+# https://git.fosscommunity.in/{fsci}
+fsci = ""
+# https://gitea.com/{gitea}
+gitea = ""
+# https://github.com/{github}
+github = "ObserverOfTime"
+# https://gitlab.com/{gitlab}
+gitlab = "ObserverOfTime"
+# https://gitlab.gnome.org/{gnome}
+gnome = ""
+# https://invent.kde.org/{kde}
+kde = ""
+# https://sourceforge.net/users/{sourceforge}
+sourceforge = ""
+
+[links.packages]
+# https://aur.archlinux.org/packages/?SeB=m&K={aur}
+aur = "ObserverOfTime"
+# https://copr.fedorainfracloud.org/coprs/{copr}
+copr = "observeroftime"
+# https://metacpan.org/author/{cpan}
+cpan = ""
+# https://crates.io/users/{crates}
+crates = ""
+# https://hub.docker.com/publishers/{docker}
+docker = ""
+# https://github.com/{gpr}?tab=packages
+gpr = "ObserverOfTime"
+# https://launchpad.net/~{launchpad}
+launchpad = "chronobserver"
+# https://www.npmjs.com/~{npmjs}
+npmjs = ""
+# https://www.nuget.org/profiles/{nuget}
+nuget = ""
+# https://build.opensuse.org/users/{obs}
+obs = ""
+# https://pypi.org/user/{pypi}
+pypi = "ObserverOfTime"
+# https://rubygems.org/profiles/{rubygems}
+rubygems = ""
+
+[[repos.source]]
+name = "yaenv"
+description = "Yet another dotenv parser for Python."
+tags = ["python", "django", "library"]
+
+[[repos.source]]
+name = "DiscordThemes"
+description = "A collection of my custom Discord themes."
+tags = ["css", "theme", "discord"]
+
+[[repos.source]]
+name = "resume"
+description = "Reusable resume made with RelaxedJS."
+tags = ["pug", "scss", "template"]
+
+[[repos.source]]
+name = "portfolio"
+description = "Reusable portfolio website made with Svelte."
+tags = ["svelte", "javascript", "template"]
+
+[[repos.source]]
+name = "mpv-scripts"
+description = "My personal mpv scripts."
+tags = ["lua", "mpv"]
+
+[[repos.source]]
+name = "7SegmentDisplays"
+description = "What's the longest word you can write with seven-segment displays?"
+tags = ["multilanguage"]
+
+[[repos.source]]
+name = "multiedit.vim"
+description = "Like :tabedit but with multiple arguments."
+tags = ["vim", "plugin"]
+
+[[repos.source]]
+name = "ncm2-jc2"
+description = "vim-javacomplete2 source for ncm2."
+tags = ["vim", "plugin"]
+
+[[repos.source]]
+name = "home.files"
+description = "My dotfiles."
+tags = ["config", "dotfiles", "mpv", "arch"]
+
+[[repos.source]]
+name = "dotnvim"
+description = "My Neovim configuration."
+tags = ["config", "dotfiles", "vim", "python"]
+
+[[repos.source]]
+name = "PKGBUILDS"
+description = "A collection of my person PKGBUILD files for Arch."
+tags = ["arch"]
+
+[[repos.source]]
+name = "observeroftime.github.io"
+description = "My GitHub page."
+tags = ["pug", "scss", "site"]
+
+[[repos.fork]]
+name = "discord.nvim"
+source = "https://github.com/aurieh/discord.nvim"
+description = "Discord Rich Presence for Neovim."
+tags = ["vim", "python", "plugin", "discord"]
+
+[[repos.fork]]
+name = "transfer.js"
+source = "https://github.com/roccomuso/transfer-sh"
+description = "Node.js CLI tool for easy file sharing with transfer.sh."
+tags = ["javascript", "node", "cli", "app"]
+
+[[repos.fork]]
+name = "coloresque.vim"
+source = "https://github.com/systemmonkey42/vim-coloresque"
+description = "Color preview for Vim."
+tags = ["vim", "plugin"]
+
+[[repos.organisation]]
+name = "mangadventure/MangAdventure"
+description = "A simple manga hosting CMS written in Django."
+tags = ["python", "django", "scss", "javascript", "site", "manga"]
+
+[[repos.organisation]]
+name = "mangadventure/django-commentary"
+description = "Yet another Django comments framework."
+tags = ["python", "django", "library"]
+
+[[repos.organisation]]
+name = "mangadventure/font"
+description = "Icon font used in MangAdventure."
+tags = ["webfont"]
+
+[[repos.organisation]]
+name = "TodokanaiTL/WA2EnglishPatch"
+description = "White Album 2 English patch installer."
+tags = ["inno", "installer", "gui", "app"]
+
+[[repos.organisation]]
+name = "TodokanaiTL/todokanaitl.github.io"
+description = "TodokanaiTL website."
+tags = ["html", "scss", "javascript", "site"]
+
+[[repos.organisation]]
+name = "TodokanaiTL/wa2-wine"
+description = "Instructions for installing and patching White Album 2 on wine."
+tags = ["docs", "tutorial"]
+
+[[repos.contribution]]
+name = "bb010g/betterdiscordctl"
+description = "A utility for managing BetterDiscord on Linux."
+tags = ["bash", "cli", "app", "discord"]
+
+[[repos.contribution]]
+name = "github/linguist"
+description = "GitHub Language detection."
+tags = ["ruby", "app", "library"]
+
+[[repos.contribution]]
+name = "github/explore"
+description = "Community-curated topic and collection pages on GitHub."
+tags = ["docs"]
+
+[[repos.contribution]]
+name = "inorichi/tachiyomi-extensions"
+description = "Extension catalogues for the Tachiyomi app."
+tags = ["kotlin", "android", "plugin", "manga"]
+
+[[repos.contribution]]
+name = "neovim/neovim"
+description = "Vim fork focused on extensibility and usability."
+tags = ["vim", "tui", "app"]
+
+[[repos.contribution]]
+name = "dense-analysis/ale"
+description = "Check syntax in Vim asynchronously and fix files."
+tags = ["vim", "plugin"]
+
+[[repos.contribution]]
+name = "cakebaker/scss-syntax.vim"
+description = "Vim syntax file for SCSS."
+tags = ["vim", "plugin"]
+
+[[repos.contribution]]
+name = "openstyles/usercss-meta"
+description = "Parse usercss styles supported by the Stylus userstyle manager."
+tags = ["javascript", "node", "library"]
