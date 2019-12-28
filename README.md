@@ -16,6 +16,12 @@ Reusable portfolio website written in [Svelte][svelte].
 
 ## Changelog
 
+### v0.1.1
+
+* Add Debian Salsa GitLab
+* Fix tooltip position
+* Fix BitBucket icon gradient
+
 ### v0.1.0
 
 * Initial release
@@ -31,4 +37,10 @@ Reusable portfolio website written in [Svelte][svelte].
 
 ## License
 
-Licensed under the [Mozilla Public License](LICENSE.txt).
+```
+Copyright (c) 2019-2020 ObserverOfTime
+
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at http://mozilla.org/MPL/2.0/.
+```

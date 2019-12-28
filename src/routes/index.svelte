@@ -43,6 +43,11 @@
     min-height: 100vh;
     align-items: stretch;
   }
+  :global(#icons) {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+  }
 </style>
 
 <svelte:head>

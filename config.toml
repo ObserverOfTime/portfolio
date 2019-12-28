@@ -30,6 +30,8 @@ youtube = ""
 bitbucket = ""
 # https://codeberg.org/{codeberg}
 codeberg = ""
+# https://salsa.debian.org/{debian}
+debian = ""
 # https://framagit.org/{framagit}
 framagit = ""
 # https://git.fosscommunity.in/{fsci}

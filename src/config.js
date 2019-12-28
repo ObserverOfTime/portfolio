@@ -1,6 +1,16 @@
+/** @module config */
+
 import config from '../config.toml';
 
-// map usernames to links
+/**
+ * Map usernames to links.
+ *
+ * @private
+ * @function map
+ * @param {Array.<string>} arr - An array of usernames.
+ * @param {Array.<Object.<string, string>>} obj - A mapping object.
+ * @return {Array.<Object.<string, string>>} An array of link objects.
+ */
 const map = (arr, obj) => arr.reduce((acc, [k, v]) =>
   obj[k] && acc.concat({
     href: v[0].replace('{}', obj[k]),
@@ -22,6 +32,7 @@ config.links.social = map(Object.entries({
 config.links.vcs = map(Object.entries({
   bitbucket: ['https://bitbucket.org/{}', 'Bitbucket'],
   codeberg: ['https://codeberg.org/{}', 'Codeberg'],
+  debian: ['https://salsa.debian.org/{}', 'Debian Salsa GitLab'],
   framagit: ['https://framagit.org/{}', 'Framagit'],
   fsci: ['https://git.fosscommunity.in/{}', 'FSCI GitLab'],
   gitea: ['https://gitea.com/{}', 'Gitea'],
@@ -83,7 +94,15 @@ config.links.packages = map(Object.entries({
   ]
 }), config.links.packages);
 
-// get the GitHub URL of a repo
+/**
+ * Get the GitHub URL of a repo.
+ *
+ * @private
+ * @function ghurl
+ * @param {string} repo - The name of the repo.
+ * @param {string} type - The type of the repo.
+ * @return {stirng} The URL of the repo.
+ */
 const ghurl = (repo, type) => {
   const href = config.links.vcs.find(l => l.title === 'GitHub').href;
   if(!repo.includes('/')) return `${href}/${repo}`;
@@ -97,5 +116,26 @@ config.repos = Object.keys(config.repos).reduce((acc, key) =>
     it.concat({url: ghurl(val.name, key), type: key, ...val}), []
   )), []
 );
+
+/**
+ * An object containing information about the user.
+ *
+ * @member module:config~info
+ * @type {Object.<string, string>}
+ */
+
+/**
+ * An object containing the user's links.
+ *
+ * @member module:config~links
+ * @type {Object.<string, Array.<Object.<string, string>>>}
+ */
+
+/**
+ * An array containing the user's repositories.
+ *
+ * @member module:config~repos
+ * @type {Array.<Object.<string, string>>}
+ */
 
 export const {info, links, repos} = config;
