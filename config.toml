@@ -52,6 +52,8 @@ sourceforge = ""
 [links.packages]
 # https://aur.archlinux.org/packages/?SeB=m&K={aur}
 aur = "ObserverOfTime"
+# https://bintray.com/{bintray}
+bintray = ""
 # https://copr.fedorainfracloud.org/coprs/{copr}
 copr = "observeroftime"
 # https://metacpan.org/author/{cpan}
@@ -217,6 +219,11 @@ tags = ["vim", "plugin"]
 name = "cakebaker/scss-syntax.vim"
 description = "Vim syntax file for SCSS."
 tags = ["vim", "plugin"]
+
+[[repos.contribution]]
+name = "Syncplay/syncplay"
+description = "Media player synchronisation over the internet."
+tags = ["python", "gui", "app"]
 
 [[repos.contribution]]
 name = "openstyles/usercss-meta"

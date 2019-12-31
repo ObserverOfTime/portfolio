@@ -16,11 +16,15 @@ Reusable portfolio website written in [Svelte][svelte].
 
 ## Changelog
 
+### v0.1.2
+
+* Added JFrog Bintray
+
 ### v0.1.1
 
-* Add Debian Salsa GitLab
-* Fix tooltip position
-* Fix BitBucket icon gradient
+* Added Debian Salsa GitLab
+* Fixed tooltip position
+* Fixed BitBucket icon gradient
 
 ### v0.1.0
 
@@ -37,10 +41,8 @@ Reusable portfolio website written in [Svelte][svelte].
 
 ## License
 
-```
-Copyright (c) 2019-2020 ObserverOfTime
-
-This Source Code Form is subject to the terms of the Mozilla Public
-License, v. 2.0. If a copy of the MPL was not distributed with this
-file, You can obtain one at http://mozilla.org/MPL/2.0/.
-```
+> Copyright (c) 2019-2020 ObserverOfTime
+>
+> This Source Code Form is subject to the terms of the Mozilla Public
+> License, v. 2.0. If a copy of the MPL was not distributed with this
+> file, You can obtain one at http://mozilla.org/MPL/2.0/.

@@ -48,6 +48,10 @@ config.links.packages = map(Object.entries({
     'https://aur.archlinux.org/packages/?SeB=m&K={}',
     'Arch User Repository'
   ],
+  bintray: [
+    'https://bintray.com/{}',
+    'JFrog Bintray'
+  ],
   copr: [
     'https://copr.fedorainfracloud.org/coprs/{}',
     'Cool Other Package Repo'
