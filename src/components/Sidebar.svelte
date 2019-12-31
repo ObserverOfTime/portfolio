@@ -1,5 +1,4 @@
 <script>
-  import {onMount} from 'svelte';
   import {fly} from 'svelte/transition';
   import Media from './Media';
   import Icon from './Icon';
@@ -10,23 +9,23 @@
 </script>
 
 <style>
-  :global(#sidebar) {
+  #sidebar {
     position: static;
     top: 0;
     left: 0;
     flex: 0 0 250px;
-    overflow-y: auto;
+    padding: 0.2em 0.5em 0;
     text-align: center;
     border-right: 1px solid #AAA;
   }
-  :global(#sidebar.fullwidth) {
+  #sidebar.fullwidth {
     border: none;
     flex-basis: 100%;
   }
-  :global(#avatar) {
+  #avatar {
     height: auto;
-    width: 90%;
-    max-width: 225px;
+    width: 100%;
+    max-width: 230px;
     border-radius: 5%;
     margin: 0.5em auto 0;
   }
@@ -62,7 +61,7 @@
         <Icon icon="resume" href="{info.resume}" title="Resume"/>
         <Icon icon="homepage" href="{info.homepage}" title="Homepage"/>
       </nav>
-      <article id="bio">{info.bio}</article>
+      <article id="bio">{info.bio.trim()}</article>
       <img id="avatar" src="avatar.jpg" alt="Avatar">
       <nav id="social" class="links">
         <h3>Social Platforms</h3>

@@ -1,22 +1,22 @@
 {
   "name": "@ObserverOfTime/portfolio",
   "version": "0.1.2",
+  "license": "MPL-2.0",
   "description": "A reusable portfolio website written in Svelte",
   "repository": "github:ObserverOfTime/portfolio",
   "homepage": "https://observeroftime.github.io/portfolio/",
   "author": "ObserverOfTime <chronobserver@disroot.org>",
+  "keywords": [
+    "portfolio",
+    "template",
+    "svelte"
+  ],
   "files": [
     "src/",
     "static/",
     "config.toml",
     "webpack.config.js"
   ],
-  "keywords": [
-    "portfolio",
-    "template",
-    "svelte"
-  ],
-  "license": "MPL-2.0",
   "scripts": {
     "build": "sapper build",
     "dev": "sapper dev",

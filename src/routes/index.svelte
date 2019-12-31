@@ -5,6 +5,13 @@
 </script>
 
 <style>
+  @font-face {
+    font-family: 'Fira Sans';
+    src: url('fonts/FiraSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
   :global(body) {
     margin: 0;
     color: #EEE;

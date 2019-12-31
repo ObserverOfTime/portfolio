@@ -129,7 +129,7 @@ tags = ["config", "dotfiles", "vim", "python"]
 
 [[repos.source]]
 name = "PKGBUILDS"
-description = "A collection of my person PKGBUILD files for Arch."
+description = "A collection of my personal PKGBUILD files for Arch."
 tags = ["arch"]
 
 [[repos.source]]

@@ -6,11 +6,11 @@ Reusable portfolio website written in [Svelte][svelte].
 
 ## TODO
 
-* [ ] Instructions
 * [ ] Repo filters
 * [ ] SEO meta tags
 * [ ] Custom themes
 * [ ] [Translations][i18n]
+* [ ] Instructions
 
 [i18n]: https://github.com/kaisermann/svelte-i18n
 
@@ -19,6 +19,7 @@ Reusable portfolio website written in [Svelte][svelte].
 ### v0.1.2
 
 * Added JFrog Bintray
+* Bundled Fira Sans font
 
 ### v0.1.1
 
@@ -37,7 +38,7 @@ Reusable portfolio website written in [Svelte][svelte].
 * Bundles the [Fira Sans][fira] font family
 
 [mfg]: https://github.com/MfgLabs/mfglabs-iconset
-[fira]: https://github.com/mozilla/Fira
+[fira]: https://github.com/bBoxType/FiraSans
 
 ## License
 

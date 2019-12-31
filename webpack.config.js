@@ -25,6 +25,7 @@ module.exports = {
           loader: 'svelte-loader',
           options: {
             dev,
+            css: true,
             hydratable: true,
             hotReload: false
           }
@@ -57,7 +58,7 @@ module.exports = {
           loader: 'svelte-loader',
           options: {
             dev,
-            css: false,
+            css: true,
             generate: 'ssr'
           }
         }

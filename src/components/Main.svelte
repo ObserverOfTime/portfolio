@@ -5,15 +5,15 @@
 </script>
 
 <style>
-  :global(#main) {
+  #main {
     height: 100%;
     flex: 0 1 100%;
     padding: 0.25em 0.5em;
   }
-  :global(#sidebar.fullwidth + #main) {
+  #sidebar.fullwidth + #main {
     display: none;
   }
-  :global(#repos) {
+  #repos {
     display: flex;
     flex-direction: column;
   }
