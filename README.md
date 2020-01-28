@@ -16,6 +16,11 @@ Reusable portfolio website written in [Svelte][svelte].
 
 ## Changelog
 
+### v0.1.3
+
+* Added enumagic.py repository
+* Added Last-Modified meta tag
+
 ### v0.1.2
 
 * Added JFrog Bintray

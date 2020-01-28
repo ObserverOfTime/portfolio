@@ -118,6 +118,11 @@ description = "vim-javacomplete2 source for ncm2."
 tags = ["vim", "plugin"]
 
 [[repos.source]]
+name = "enumagic.py"
+description = "Python enums infused with magic."
+tags = ["python", "django", "library"]
+
+[[repos.source]]
 name = "home.files"
 description = "My dotfiles."
 tags = ["config", "dotfiles", "mpv", "arch"]

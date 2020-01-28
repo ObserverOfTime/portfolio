@@ -58,6 +58,7 @@
 </style>
 
 <svelte:head>
+  <meta http-equiv="Last-Modified" content={new Date().toGMTString()}>
   <title>{config.info.name} - Portfolio</title>
 </svelte:head>
 
