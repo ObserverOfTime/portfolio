@@ -1,8 +1,8 @@
 # portfolio
 
-Reusable portfolio website written in [Svelte][svelte].
+Reusable portfolio website written in [Svelte][].
 
-[svelte]: https://svelte.dev
+[Svelte]: https://svelte.dev
 
 ## TODO
 
@@ -15,6 +15,11 @@ Reusable portfolio website written in [Svelte][svelte].
 [i18n]: https://github.com/kaisermann/svelte-i18n
 
 ## Changelog
+
+### v0.1.4
+
+* Added Disroot Git & Gitdab
+* Replaced `<wbr>` with [U+200B][]
 
 ### v0.1.3
 
@@ -35,6 +40,8 @@ Reusable portfolio website written in [Svelte][svelte].
 ### v0.1.0
 
 * Initial release
+
+[U+200B]: https://en.wikipedia.org/wiki/Zero-width_space
 
 ## Credits
 

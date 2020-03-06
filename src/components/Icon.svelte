@@ -15,7 +15,7 @@
   }
 </style>
 
-<Tooltip text="{title}">
+<Tooltip text={title}>
   <a {href} name="i-{icon}">
     <svg class="icon i-{icon}">
       <use href="#i-{icon}"/>

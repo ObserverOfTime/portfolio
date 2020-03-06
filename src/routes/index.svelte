@@ -62,5 +62,5 @@
   <title>{config.info.name} - Portfolio</title>
 </svelte:head>
 
-<Sidebar info="{config.info}" links="{config.links}"/>
-<Main repos="{config.repos}"/>
+<Sidebar info={config.info} links={config.links}/>
+<Main repos={config.repos}/>

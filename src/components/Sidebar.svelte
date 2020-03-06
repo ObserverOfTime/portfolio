@@ -53,13 +53,13 @@
 
 <Media query="(min-width: 700px)" let:matches>
   {#if matches || show}
-    <aside id="sidebar" class:fullwidth="{show}"
+    <aside id="sidebar" class:fullwidth={show}
            transition:fly={{x: -250, duration: 500}}>
       <h1 id="name">{info.name}</h1>
       <nav id="info">
         <Icon icon="email" href="mailto:{info.email}" title="E-mail"/>
-        <Icon icon="resume" href="{info.resume}" title="Resume"/>
-        <Icon icon="homepage" href="{info.homepage}" title="Homepage"/>
+        <Icon icon="resume" href={info.resume} title="Resume"/>
+        <Icon icon="homepage" href={info.homepage} title="Homepage"/>
       </nav>
       <article id="bio">{info.bio.trim()}</article>
       <img id="avatar" src="avatar.jpg" alt="Avatar">

@@ -38,8 +38,8 @@
 </style>
 
 <section class="repo">
-  <a class="repo-title" href="{repo.url}" rel="noopener">
-    {@html repo.name.replace('/', '/<wbr>')}
+  <a class="repo-title" href={repo.url} rel="noopener">
+    {repo.name.replace('/', '/\u200b')}
   </a>
   <span class="repo-type">{repo.type}</span>
   <p class="repo-desc">{repo.description}</p>

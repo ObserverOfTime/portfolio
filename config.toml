@@ -32,10 +32,14 @@ bitbucket = ""
 codeberg = ""
 # https://salsa.debian.org/{debian}
 debian = ""
+# https://git.disroot.org/{disroot}
+disroot = "chronobserver"
 # https://framagit.org/{framagit}
 framagit = ""
 # https://git.fosscommunity.in/{fsci}
 fsci = ""
+# https://gitdab.com/{gitdab}
+gitdab = ""
 # https://gitea.com/{gitea}
 gitea = ""
 # https://github.com/{github}
@@ -50,7 +54,7 @@ kde = ""
 sourceforge = ""
 
 [links.packages]
-# https://aur.archlinux.org/packages/?SeB=m&K={aur}
+# https://aur.archlinux.org/packages/?SeB=M&K={aur}
 aur = "ObserverOfTime"
 # https://bintray.com/{bintray}
 bintray = ""

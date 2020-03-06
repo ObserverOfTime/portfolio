@@ -33,8 +33,10 @@ config.links.vcs = map(Object.entries({
   bitbucket: ['https://bitbucket.org/{}', 'Bitbucket'],
   codeberg: ['https://codeberg.org/{}', 'Codeberg'],
   debian: ['https://salsa.debian.org/{}', 'Debian Salsa GitLab'],
+  disroot: ['https://git.disroot.org/{}', 'Disroot Git'],
   framagit: ['https://framagit.org/{}', 'Framagit'],
   fsci: ['https://git.fosscommunity.in/{}', 'FSCI GitLab'],
+  gitdab: ['https://gitdab.com/{}', 'Gitdab'],
   gitea: ['https://gitea.com/{}', 'Gitea'],
   github: ['https://github.com/{}', 'GitHub'],
   gitlab: ['https://gitlab.com/{}', 'GitLab'],
@@ -45,7 +47,7 @@ config.links.vcs = map(Object.entries({
 
 config.links.packages = map(Object.entries({
   aur: [
-    'https://aur.archlinux.org/packages/?SeB=m&K={}',
+    'https://aur.archlinux.org/packages/?SeB=M&K={}',
     'Arch User Repository'
   ],
   bintray: [
