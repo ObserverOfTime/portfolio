@@ -38,7 +38,7 @@
 </style>
 
 <section class="repo">
-  <a class="repo-title" href={repo.url} rel="noopener">
+  <a class="repo-title" href={repo.url} target="_blank" rel="noopener">
     {repo.name.replace('/', '/\u200b')}
   </a>
   <span class="repo-type">{repo.type}</span>

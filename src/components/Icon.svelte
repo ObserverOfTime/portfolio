@@ -16,7 +16,7 @@
 </style>
 
 <Tooltip text={title}>
-  <a {href} name="i-{icon}">
+  <a {href} target="_blank" name="i-{icon}" rel="noopener">
     <svg class="icon i-{icon}">
       <use href="#i-{icon}"/>
     </svg>

@@ -138,8 +138,15 @@ tags = ["config", "dotfiles", "vim", "python"]
 
 [[repos.source]]
 name = "PKGBUILDS"
+url = "https://git.disroot.org/chronobserver/PKGBUILDS"
 description = "A collection of my personal PKGBUILD files for Arch."
 tags = ["arch"]
+
+[[repos.source]]
+name = "ctc-patcher"
+url = "https://git.disroot.org/chronobserver/ctc-patcher"
+description = "Script that applies CutTheCord patches to Discord"
+tags = ["bash", "cli", "discord"]
 
 [[repos.source]]
 name = "observeroftime.github.io"

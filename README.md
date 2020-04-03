@@ -19,7 +19,8 @@ Reusable portfolio website written in [Svelte][].
 ### v0.1.4
 
 * Added Disroot Git & Gitdab
-* Replaced `<wbr>` with [U+200B][]
+* Added ctc-patcher repository
+* Made links open in a new page
 
 ### v0.1.3
 
