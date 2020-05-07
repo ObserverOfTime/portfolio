@@ -145,7 +145,7 @@ tags = ["arch"]
 [[repos.source]]
 name = "ctc-patcher"
 url = "https://git.disroot.org/chronobserver/ctc-patcher"
-description = "Script that applies CutTheCord patches to Discord"
+description = "Script that applies CutTheCord patches to Discord."
 tags = ["bash", "cli", "discord"]
 
 [[repos.source]]
@@ -158,6 +158,12 @@ name = "discord.nvim"
 source = "https://github.com/aurieh/discord.nvim"
 description = "Discord Rich Presence for Neovim."
 tags = ["vim", "python", "plugin", "discord"]
+
+[[repos.fork]]
+name = "PathOfExileRPC"
+source = "https://github.com/xKynn/PathOfExileRPC"
+description = "Discord RPC Client for Path of Exile that works on Linux."
+tags = ["python", "cli", "discord"]
 
 [[repos.fork]]
 name = "transfer.js"
