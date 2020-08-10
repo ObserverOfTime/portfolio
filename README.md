@@ -22,6 +22,7 @@ Reusable portfolio website written in [Svelte][].
 * Added Gitdab VCS
 * Added ctc-patcher repo
 * Added PathOfExileRPC repo
+* Added wine-discord-ipc-bridge repo
 * Made links open in a new page
 
 ### v0.1.3

@@ -248,6 +248,11 @@ description = "Media player synchronisation over the internet."
 tags = ["python", "gui", "app"]
 
 [[repos.contribution]]
+name = "koukuno/wine-discord-ipc-bridge"
+description = "Enable games running under wine to use Discord Rich Presence."
+tags = ["c", "wine", "discord", "app"]
+
+[[repos.contribution]]
 name = "openstyles/usercss-meta"
 description = "Parse usercss styles supported by the Stylus userstyle manager."
 tags = ["javascript", "node", "library"]
