@@ -16,18 +16,17 @@ Reusable portfolio website written in [Svelte][].
 
 ## Changelog
 
+### v0.1.5
+
+* Added GitGud, freedesktop.org, git.rip
+
 ### v0.1.4
 
-* Added Disroot Git VCS
-* Added Gitdab VCS
-* Added ctc-patcher repo
-* Added PathOfExileRPC repo
-* Added wine-discord-ipc-bridge repo
+* Added Disroot Git & Gitdab
 * Made links open in a new page
 
 ### v0.1.3
 
-* Added enumagic.py repository
 * Added Last-Modified meta tag
 
 ### v0.1.2
@@ -37,15 +36,13 @@ Reusable portfolio website written in [Svelte][].
 
 ### v0.1.1
 
-* Added Debian Salsa GitLab
+* Added Debian Salsa
 * Fixed tooltip position
 * Fixed BitBucket icon gradient
 
 ### v0.1.0
 
 * Initial release
-
-[U+200B]: https://en.wikipedia.org/wiki/Zero-width_space
 
 ## Credits
 

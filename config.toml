@@ -36,16 +36,22 @@ debian = ""
 disroot = "chronobserver"
 # https://framagit.org/{framagit}
 framagit = ""
+# https://gitlab.freedesktop.org/{freedesktop}
+freedesktop = ""
 # https://git.fosscommunity.in/{fsci}
 fsci = ""
 # https://gitdab.com/{gitdab}
 gitdab = ""
 # https://gitea.com/{gitea}
 gitea = ""
+# https://gitgud.io/{gitgud}
+gitgud = ""
 # https://github.com/{github}
 github = "ObserverOfTime"
 # https://gitlab.com/{gitlab}
 gitlab = "ObserverOfTime"
+# https://git.rip/{}
+gitrip = ""
 # https://gitlab.gnome.org/{gnome}
 gnome = ""
 # https://invent.kde.org/{kde}
@@ -213,6 +219,11 @@ description = "A utility for managing BetterDiscord on Linux."
 tags = ["bash", "cli", "app", "discord"]
 
 [[repos.contribution]]
+name = "inorichi/tachiyomi-extensions"
+description = "Extension catalogues for the Tachiyomi app."
+tags = ["kotlin", "android", "plugin", "manga"]
+
+[[repos.contribution]]
 name = "github/linguist"
 description = "GitHub Language detection."
 tags = ["ruby", "app", "library"]
@@ -223,9 +234,9 @@ description = "Community-curated topic and collection pages on GitHub."
 tags = ["docs"]
 
 [[repos.contribution]]
-name = "inorichi/tachiyomi-extensions"
-description = "Extension catalogues for the Tachiyomi app."
-tags = ["kotlin", "android", "plugin", "manga"]
+name = "github/choosealicense.com"
+description = "Non-judgmental guidance on choosing a license for your open source project."
+tags = ["ruby", "site"]
 
 [[repos.contribution]]
 name = "neovim/neovim"
@@ -241,6 +252,11 @@ tags = ["vim", "plugin"]
 name = "cakebaker/scss-syntax.vim"
 description = "Vim syntax file for SCSS."
 tags = ["vim", "plugin"]
+
+[[repos.contribution]]
+name = "python-poetry/poetry"
+description = "Python dependency management and packaging made easy."
+tags = ["python", "cli", "app"]
 
 [[repos.contribution]]
 name = "Syncplay/syncplay"

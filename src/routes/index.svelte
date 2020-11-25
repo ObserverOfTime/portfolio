@@ -55,6 +55,9 @@
     visibility: hidden;
     pointer-events: none;
   }
+  :global(#sidebar.fullwidth + #main) {
+    display: none;
+  }
 </style>
 
 <svelte:head>

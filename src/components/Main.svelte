@@ -10,9 +10,6 @@
     flex: 0 1 100%;
     padding: 0.25em 0.5em;
   }
-  #sidebar.fullwidth + #main {
-    display: none;
-  }
   #repos {
     display: flex;
     flex-direction: column;
