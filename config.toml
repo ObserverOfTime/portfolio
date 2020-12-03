@@ -254,6 +254,11 @@ description = "Vim syntax file for SCSS."
 tags = ["vim", "plugin"]
 
 [[repos.contribution]]
+name = "lutris/lutris"
+description = "Open Source gaming platform for GNU/Linux"
+tags = ["python", "gui", "app"]
+
+[[repos.contribution]]
 name = "python-poetry/poetry"
 description = "Python dependency management and packaging made easy."
 tags = ["python", "cli", "app"]
