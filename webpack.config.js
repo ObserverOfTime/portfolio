@@ -1,7 +1,5 @@
-const path = require('path');
-const webpack = require('webpack');
-
-const {readFileSync} = require('fs');
+const {resolve} = require('path');
+const {DefinePlugin} = require('webpack');
 
 const sapper = require('sapper/config/webpack');
 const pkg = require('./package.json');
@@ -9,7 +7,7 @@ const pkg = require('./package.json');
 const mode = process.env.NODE_ENV || 'production';
 const dev = mode === 'development';
 
-const alias = {svelte: path.resolve('node_modules', 'svelte')};
+const alias = {svelte: resolve('node_modules', 'svelte')};
 const extensions = ['.mjs', '.js', '.json', '.svelte', '.html'];
 const mainFields = ['svelte', 'module', 'browser', 'main'];
 
@@ -37,7 +35,7 @@ module.exports = {
     },
     mode,
     plugins: [
-      new webpack.DefinePlugin({
+      new DefinePlugin({
         'process.browser': true,
         'process.env.NODE_ENV': JSON.stringify(mode)
       })
@@ -69,7 +67,7 @@ module.exports = {
     },
     mode,
     plugins: [
-      new webpack.DefinePlugin({
+      new DefinePlugin({
         'process.browser': false,
         'process.env.NODE_ENV': JSON.stringify(mode)
       })
@@ -82,7 +80,7 @@ module.exports = {
   serviceworker: {
     mode,
     plugins: [
-      new webpack.DefinePlugin({
+      new DefinePlugin({
         'process.browser': true,
         'process.env.NODE_ENV': JSON.stringify(mode)
       })

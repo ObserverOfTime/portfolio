@@ -16,6 +16,10 @@ Reusable portfolio website written in [Svelte][].
 
 ## Changelog
 
+### v0.1.6
+
+* Added Darcs Hub & CTAN
+
 ### v0.1.5
 
 * Added GitGud, freedesktop.org, git.rip
@@ -55,7 +59,7 @@ Reusable portfolio website written in [Svelte][].
 
 ## License
 
-> Copyright (c) 2019-2020 ObserverOfTime
+> Copyright (c) 2019-2021 ObserverOfTime
 >
 > This Source Code Form is subject to the terms of the Mozilla Public
 > License, v. 2.0. If a copy of the MPL was not distributed with this

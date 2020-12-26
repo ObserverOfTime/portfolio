@@ -1,6 +1,6 @@
 {
   "name": "@ObserverOfTime/portfolio",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "license": "MPL-2.0",
   "description": "A reusable portfolio website written in Svelte",
   "repository": "github:ObserverOfTime/portfolio",
@@ -28,14 +28,14 @@
   },
   "dependencies": {
     "sapper": "^0.28.10",
-    "svelte": "^3.30.0",
+    "svelte": "^3.31.0",
     "svelte-loader": "^2.13.6",
     "toml-loader": "^1.0.0",
     "webpack": "^4.44.2"
   },
   "devDependencies": {
-    "eslint": "^7.14.0",
-    "eslint-plugin-svelte3": "^2.7.3",
+    "eslint": "^7.16.0",
+    "eslint-plugin-svelte3": "^3.0.0",
     "serve": "^11.3.2",
     "stylelint": "^13.8.0"
   },
@@ -44,9 +44,10 @@
     "sirv": "^0.4.6"
   },
   "resolutions": {
+    "ini": "^2.0.0",
     "lodash": "^4.17.20",
     "source-map-resolve": "^0.6.0",
-    "watchpack": "^2.0.1"
+    "watchpack": "^2.1.0"
   },
   "eslintConfig": {
     "root": true,

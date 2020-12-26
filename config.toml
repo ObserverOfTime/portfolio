@@ -30,6 +30,8 @@ youtube = ""
 bitbucket = ""
 # https://codeberg.org/{codeberg}
 codeberg = ""
+# https://hub.darcs.net/{darcs}
+darcs = ""
 # https://salsa.debian.org/{debian}
 debian = ""
 # https://git.disroot.org/{disroot}
@@ -70,6 +72,8 @@ copr = "observeroftime"
 cpan = ""
 # https://crates.io/users/{crates}
 crates = ""
+# https://ctan.org/home/{ctan}
+ctan = ""
 # https://hub.docker.com/publishers/{docker}
 docker = ""
 # https://github.com/{gpr}?tab=packages
@@ -219,7 +223,7 @@ description = "A utility for managing BetterDiscord on Linux."
 tags = ["bash", "cli", "app", "discord"]
 
 [[repos.contribution]]
-name = "inorichi/tachiyomi-extensions"
+name = "tachiyomiorg/tachiyomi-extensions"
 description = "Extension catalogues for the Tachiyomi app."
 tags = ["kotlin", "android", "plugin", "manga"]
 
@@ -269,7 +273,7 @@ description = "Media player synchronisation over the internet."
 tags = ["python", "gui", "app"]
 
 [[repos.contribution]]
-name = "koukuno/wine-discord-ipc-bridge"
+name = "hitomi-team/discord-ipc-bridge"
 description = "Enable games running under wine to use Discord Rich Presence."
 tags = ["c", "wine", "discord", "app"]
 
