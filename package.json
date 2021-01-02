@@ -28,13 +28,13 @@
   },
   "dependencies": {
     "sapper": "^0.28.10",
-    "svelte": "^3.31.0",
+    "svelte": "^3.31.1",
     "svelte-loader": "^2.13.6",
     "toml-loader": "^1.0.0",
     "webpack": "^4.44.2"
   },
   "devDependencies": {
-    "eslint": "^7.16.0",
+    "eslint": "^7.17.0",
     "eslint-plugin-svelte3": "^3.0.0",
     "serve": "^11.3.2",
     "stylelint": "^13.8.0"

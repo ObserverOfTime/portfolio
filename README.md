@@ -18,6 +18,7 @@ Reusable portfolio website written in [Svelte][].
 
 ### v0.1.6
 
+* Added Collabora GitLab
 * Added Darcs Hub & CTAN
 
 ### v0.1.5

@@ -30,6 +30,8 @@ youtube = ""
 bitbucket = ""
 # https://codeberg.org/{codeberg}
 codeberg = ""
+# https://gitlab.collabora.org/{collabora}
+collabora = ""
 # https://hub.darcs.net/{darcs}
 darcs = ""
 # https://salsa.debian.org/{debian}

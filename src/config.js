@@ -32,6 +32,7 @@ config.links.social = map(Object.entries({
 config.links.vcs = map(Object.entries({
   bitbucket: ['https://bitbucket.org/{}', 'Bitbucket'],
   codeberg: ['https://codeberg.org/{}', 'Codeberg'],
+  collabora: ['https://codeberg.org/{}', 'Collabora GitLab'],
   darcs: ['https://hub.darcs.net/{}', 'Darcs Hub'],
   debian: ['https://salsa.debian.org/{}', 'Debian Salsa'],
   disroot: ['https://git.disroot.org/{}', 'Disroot Git'],
