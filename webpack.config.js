@@ -28,7 +28,10 @@ module.exports = {
             hotReload: false
           }
         }
-      }, {
+      }, /* {
+        test: /(svelte|@sapper)\/.*\.mjs$/,
+        resolve: {fullySpecified: false}
+      }, */ {
         test: /\.toml$/,
         loader: 'toml-loader'
       }]
@@ -60,7 +63,10 @@ module.exports = {
             generate: 'ssr'
           }
         }
-      }, {
+      }, /* {
+        test: /(svelte|@sapper)\/.*\.mjs$/,
+        resolve: {fullySpecified: false}
+      }, */ {
         test: /\.toml$/,
         loader: 'toml-loader'
       }]

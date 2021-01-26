@@ -150,9 +150,15 @@ tags = ["config", "dotfiles", "vim", "python"]
 
 [[repos.source]]
 name = "PKGBUILDS"
-url = "https://git.disroot.org/chronobserver/PKGBUILDS"
+url = "https://git.disroot.org/PKGBUILDS"
 description = "A collection of my personal PKGBUILD files for Arch."
 tags = ["arch"]
+
+[[repos.source]]
+name = "discord-custom-rpc"
+url = "https://git.disroot.org/chronobserver/discord-custom-rpc"
+description = "Simple program for creating a custom Discord RPC on Linux."
+tags = ["c", "cli", "discord"]
 
 [[repos.source]]
 name = "ctc-patcher"
@@ -176,18 +182,6 @@ name = "PathOfExileRPC"
 source = "https://github.com/xKynn/PathOfExileRPC"
 description = "Discord RPC Client for Path of Exile that works on Linux."
 tags = ["python", "cli", "discord"]
-
-[[repos.fork]]
-name = "transfer.js"
-source = "https://github.com/roccomuso/transfer-sh"
-description = "Node.js CLI tool for easy file sharing with transfer.sh."
-tags = ["javascript", "node", "cli", "app"]
-
-[[repos.fork]]
-name = "coloresque.vim"
-source = "https://github.com/systemmonkey42/vim-coloresque"
-description = "Color preview for Vim."
-tags = ["vim", "plugin"]
 
 [[repos.organisation]]
 name = "mangadventure/MangAdventure"
@@ -261,7 +255,7 @@ tags = ["vim", "plugin"]
 
 [[repos.contribution]]
 name = "lutris/lutris"
-description = "Open Source gaming platform for GNU/Linux"
+description = "Open Source gaming platform for GNU/Linux."
 tags = ["python", "gui", "app"]
 
 [[repos.contribution]]

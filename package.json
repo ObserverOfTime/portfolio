@@ -27,17 +27,17 @@
     "start": "node __sapper__/build"
   },
   "dependencies": {
-    "sapper": "^0.28.10",
-    "svelte": "^3.31.1",
+    "sapper": "^0.29.0",
+    "svelte": "^3.32.0",
     "svelte-loader": "^2.13.6",
     "toml-loader": "^1.0.0",
-    "webpack": "^4.44.2"
+    "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "eslint": "^7.17.0",
+    "eslint": "^7.18.0",
     "eslint-plugin-svelte3": "^3.0.0",
     "serve": "^11.3.2",
-    "stylelint": "^13.8.0"
+    "stylelint": "^13.9.0"
   },
   "optionalDependencies": {
     "polka": "^0.5.2",
