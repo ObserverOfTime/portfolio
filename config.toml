@@ -189,9 +189,9 @@ description = "A simple manga hosting CMS written in Django."
 tags = ["python", "django", "scss", "javascript", "site", "manga"]
 
 [[repos.organisation]]
-name = "mangadventure/django-commentary"
-description = "Yet another Django comments framework."
-tags = ["python", "django", "library"]
+name = "mangadventure/discord-webhook"
+description = "Discord webhook action."
+tags = ["bash", "cli", "discord"]
 
 [[repos.organisation]]
 name = "mangadventure/font"
@@ -252,6 +252,11 @@ tags = ["vim", "plugin"]
 name = "cakebaker/scss-syntax.vim"
 description = "Vim syntax file for SCSS."
 tags = ["vim", "plugin"]
+
+[[repos.contribution]]
+name = "SciADV-Community/maho-bot"
+description = "Fun utility bot for Discord."
+tags = ["python", "discord", "bot"]
 
 [[repos.contribution]]
 name = "lutris/lutris"
