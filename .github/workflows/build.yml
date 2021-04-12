@@ -8,24 +8,22 @@ on:
 
 jobs:
   build:
-    if: |
-      contains(github.event.commits[0].message, '[skip ci]') == false &&
-      contains(github.event.commits[0].message, '[ci skip]') == false
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
-      - uses: Borales/actions-yarn@v2.1.0
+      - uses: actions/checkout@v2
+        name: Checkout repository
+      - uses: actions/setup-node@v2
+        name: Setup Node.js
       - name: Install package with yarn
         run: yarn --frozen-lockfile
       - name: Lint code with eslint & stylelint
         run: yarn lint:js && yarn lint:css
-      - name: Export static site with sapper
-        run: yarn export
+      - name: Build site with svelte-kit
+        run: yarn build
       - name: Deploy site to GitHub pages
-        if: success() && github.ref == 'refs/heads/master'
-        uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
+        if: github.ref == 'refs/heads/master'
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          repo-token: ${{secrets.GITHUB_PAT}}
-          site-directory: __sapper__/export/portfolio
+          branch: gh-pages
+          single-commit: true
+          folder: build/portfolio

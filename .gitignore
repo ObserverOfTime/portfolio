@@ -1,5 +1,6 @@
 node_modules/
-__sapper__/
+build/
+.svelte/
 .pnp/
 .pnp.js
 *.log

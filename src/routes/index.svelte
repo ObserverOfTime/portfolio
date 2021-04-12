@@ -1,7 +1,7 @@
 <script>
   import * as config from '../config';
-  import Main from '../components/Main';
-  import Sidebar from '../components/Sidebar';
+  import Main from '$lib/Main';
+  import Sidebar from '$lib/Sidebar';
 </script>
 
 <style>
@@ -44,7 +44,7 @@
   :global(:focus) { outline: none; }
   :global(::-moz-focus-inner) { border: 0; }
   :global(*) { box-sizing: border-box; }
-  :global(#sapper) {
+  :global(#svelte) {
     display: flex;
     height: 100%;
     min-height: 100vh;

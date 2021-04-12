@@ -1,3 +1,5 @@
 * text=auto
 
 static/fonts/* linguist-vendored
+src/service-worker.js linguist-vendored
+src/template.html linguist-detectable=false

@@ -2,18 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    %sapper.base%
-    <link rel="preload" as="font" type="font/woff" href="fonts/FiraSans-Regular.woff">
-    <link rel="manifest" type="application/manifest+json" href="manifest.webmanifest">
-    <link rel="shortcut icon" type="image/jpeg" href="logos/72x72.jpg">
-    %sapper.styles%
-    %sapper.head%
+    <link rel="preload" as="font" type="font/woff" href="/portfolio/fonts/FiraSans-Regular.woff">
+    <link rel="manifest" type="application/manifest+json" href="/portfolio/manifest.webmanifest">
+    <link rel="shortcut icon" type="image/jpeg" href="/portfolio/logos/72x72.jpg">
+    %svelte.head%
   </head>
   <body>
-    <div id="sapper">%sapper.html%</div>
-    %sapper.scripts%
+    <div id="svelte">%svelte.body%</div>
     <svg height="0" width="0" id="icons" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <!-- info -->

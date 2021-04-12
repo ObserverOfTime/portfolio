@@ -9,7 +9,7 @@
   "lang": "en-GB",
   "display": "standalone",
   "serviceworker": {
-    "src": "/portfolio/serviceworker.js",
+    "src": "/portfolio/service-worker.js",
     "scope": "/portfolio/"
   },
   "icons": [{
