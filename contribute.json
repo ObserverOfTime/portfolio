@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "description": "A reusable portfolio website written in Svelte.",
+  "repository": {
+    "url": "https://github.com/ObserverOfTime/portfolio",
+    "license": "MPL2",
+    "type": "git"
+  },
+  "bugs": {
+    "list": "https://github.com/ObserverOfTime/portfolio/issues",
+    "report": "https://github.com/ObserverOfTime/portfolio/issues/new"
+  },
+  "urls": {
+    "dev": "https://observeroftime.github.io/portfolio/"
+  },
+  "keywords": ["portfolio", "template", "svelte"]
+}
