@@ -18,6 +18,7 @@ jobs:
         run: yarn --frozen-lockfile
       - name: Lint code with eslint & stylelint
         run: yarn lint:js && yarn lint:css
+        continue-on-error: true
       - name: Build site with svelte-kit
         run: yarn build
       - name: Deploy site to GitHub pages

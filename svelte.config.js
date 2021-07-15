@@ -1,10 +1,13 @@
-module.exports = {
+import adapter from '@sveltejs/adapter-static';
+import {ViteToml} from 'vite-plugin-toml';
+
+export default {
   compilerOptions: {
     css: false,
     dev: process.env.NODE_ENV === 'development'
   },
   kit: {
-    adapter: require('@sveltejs/adapter-static')({
+    adapter: adapter({
       pages: 'build/portfolio', assets: 'build/portfolio'
     }),
     amp: false,
@@ -29,13 +32,14 @@ module.exports = {
     },
     router: false,
     target: '#svelte',
+    trailingSlash: 'always',
     vite: {
-      base: '/portfolio/',
+      // base: '/portfolio/',
       clearScreen: false,
       mode: process.env.NODE_ENV || 'production',
-      plugins: [require('vite-plugin-toml').ViteToml({
-        useBigInt: false, namedExports: true
-      })],
+      plugins: [
+        ViteToml({useBigInt: false, namedExports: true})
+      ],
       resolve: {
         extensions: ['.mjs', '.js', '.cjs', '.svelte', '.json']
       }

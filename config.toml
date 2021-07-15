@@ -194,6 +194,11 @@ description = "Discord webhook action."
 tags = ["bash", "cli", "discord"]
 
 [[repos.organisation]]
+name = "mangadventure/paperback-extensions"
+description = "MangAdventure extensions for Paperback-iOS."
+tags = ["typescript", "ios", "plugin", "manga"]
+
+[[repos.organisation]]
 name = "mangadventure/font"
 description = "Icon font used in MangAdventure."
 tags = ["webfont"]

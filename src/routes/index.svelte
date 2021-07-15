@@ -7,7 +7,7 @@
 <style>
   @font-face {
     font-family: 'Fira Sans';
-    src: url('fonts/FiraSans-Regular.woff') format('woff');
+    src: url('/portfolio/fonts/FiraSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -18,12 +18,18 @@
     background-color: #252525;
     font-family: 'Fira Sans', sans-serif;
   }
-  :global(ol, ul) {
+  :global(ol),
+  :global(ul) {
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  :global(h1, h2, h3, h4, h5, h6) {
+  :global(h1),
+  :global(h2),
+  :global(h3),
+  :global(h4),
+  :global(h5),
+  :global(h6) {
     margin: 0;
     padding: 0 0 0.1em;
     font-weight: inherit;
