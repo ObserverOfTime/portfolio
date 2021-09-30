@@ -47,7 +47,8 @@ config.links.vcs = map(Object.entries({
   gitrip: ['http://git.rip/{}', 'git.rip'],
   gnome: ['https://gitlab.gnome.org/{}', 'Gnome GitLab'],
   kde: ['https://invent.kde.org/{}', 'KDE Invent'],
-  sourceforge: ['https://sourceforge.net/users/{}', 'SourceForge']
+  sourceforge: ['https://sourceforge.net/users/{}', 'SourceForge'],
+  sourcehut: ['https://sr.ht/~{}', 'sourcehut']
 }), config.links.vcs);
 
 config.links.packages = map(Object.entries({

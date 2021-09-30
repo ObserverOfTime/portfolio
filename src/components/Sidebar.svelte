@@ -83,14 +83,14 @@
       </nav>
       {#if show}
         <button class="btn-hide" title="Hide sidebar"
-                on:click={() => {show = false}}>
+                tabindex="0" on:click={() => {show = false}}>
           <svg class="icon i-close"><use href="#i-close"/></svg>
         </button>
       {/if}
     </aside>
   {:else}
     <button class="btn-show" title="Show sidebar"
-            on:click={() => {show = true}}>
+            tabindex="0" on:click={() => {show = true}}>
       <svg class="icon i-arrow"><use href="#i-arrow"/></svg>
     </button>
   {/if}

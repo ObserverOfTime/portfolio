@@ -62,6 +62,8 @@ gnome = ""
 kde = ""
 # https://sourceforge.net/users/{sourceforge}
 sourceforge = ""
+# https://sr.ht/~{sourcehut}
+sourcehut = ""
 
 [links.packages]
 # https://aur.archlinux.org/packages/?SeB=M&K={aur}

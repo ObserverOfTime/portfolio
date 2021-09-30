@@ -27,8 +27,7 @@ export default {
     prerender: {
       crawl: false,
       enabled: true,
-      force: true,
-      pages: ['*']
+      entries: ['*']
     },
     router: false,
     target: '#svelte',

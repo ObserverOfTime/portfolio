@@ -16,6 +16,10 @@ Reusable portfolio website written in [Svelte][].
 
 ## Changelog
 
+### v0.2.1
+
+* Added sourcehut
+
 ### v0.2.0
 
 * Replaced sapper with svelte-kit

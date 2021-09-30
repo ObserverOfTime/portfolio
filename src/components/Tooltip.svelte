@@ -30,7 +30,9 @@
 
 <div class="tooltip"
      on:mouseover={() => {visible = true}}
-     on:mouseout={() => {visible = false}}>
+     on:focus={() => {visible = true}}
+     on:mouseout={() => {visible = false}}
+     on:blur={() => {visible = false}}>
   <slot></slot>
   {#if visible}
     <span class="tooltip-text" style="min-width: {width}"
