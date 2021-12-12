@@ -18,7 +18,9 @@ Reusable portfolio website written in [Svelte][].
 
 ### v0.2.1
 
+* Added femgit
 * Added sourcehut
+* Removed bintray
 
 ### v0.2.0
 

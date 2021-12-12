@@ -36,6 +36,7 @@ config.links.vcs = map(Object.entries({
   darcs: ['https://hub.darcs.net/{}', 'Darcs Hub'],
   debian: ['https://salsa.debian.org/{}', 'Debian Salsa'],
   disroot: ['https://git.disroot.org/{}', 'Disroot Git'],
+  femgit: ['https://fem.mint.lgbt/{}', 'femgit'],
   framagit: ['https://framagit.org/{}', 'FramaGit'],
   freedesktop: ['https://gitlab.freedesktop.org/{}', 'freedesktop.org'],
   fsci: ['https://git.fosscommunity.in/{}', 'FSCI GitLab'],
@@ -55,10 +56,6 @@ config.links.packages = map(Object.entries({
   aur: [
     'https://aur.archlinux.org/packages/?SeB=M&K={}',
     'Arch User Repository'
-  ],
-  bintray: [
-    'https://bintray.com/{}',
-    'JFrog Bintray'
   ],
   copr: [
     'https://copr.fedorainfracloud.org/coprs/{}',

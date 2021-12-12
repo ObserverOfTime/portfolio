@@ -40,7 +40,10 @@ export default {
         ViteToml({useBigInt: false, namedExports: true})
       ],
       resolve: {
-        extensions: ['.mjs', '.js', '.cjs', '.svelte', '.json']
+        extensions: ['.js', '.svelte']
+      },
+      server: {
+        fs: {strict: false}
       }
     }
   }

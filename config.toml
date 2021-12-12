@@ -11,7 +11,7 @@ resume = "https://github.com/ObserverOfTime/resume/releases/latest/download/Resu
 # https://www.facebook.com/{facebook}
 facebook = ""
 # https://www.linkedin.com/in/{linkedin}
-linkedin = ""
+linkedin = "yohane"
 # https://reddit.com/user/{reddit}
 reddit = "ObserverOfTime"
 # https://trello.com/{trello}
@@ -38,6 +38,8 @@ darcs = ""
 debian = ""
 # https://git.disroot.org/{disroot}
 disroot = "chronobserver"
+# https://fem.mint.lgbt/{femgit}
+femgit = ""
 # https://framagit.org/{framagit}
 framagit = ""
 # https://gitlab.freedesktop.org/{freedesktop}
@@ -68,8 +70,6 @@ sourcehut = ""
 [links.packages]
 # https://aur.archlinux.org/packages/?SeB=M&K={aur}
 aur = "ObserverOfTime"
-# https://bintray.com/{bintray}
-bintray = ""
 # https://copr.fedorainfracloud.org/coprs/{copr}
 copr = "observeroftime"
 # https://metacpan.org/author/{cpan}
@@ -161,12 +161,6 @@ name = "discord-custom-rpc"
 url = "https://git.disroot.org/chronobserver/discord-custom-rpc"
 description = "Simple program for creating a custom Discord RPC on Linux."
 tags = ["c", "cli", "discord"]
-
-[[repos.source]]
-name = "ctc-patcher"
-url = "https://git.disroot.org/chronobserver/ctc-patcher"
-description = "Script that applies CutTheCord patches to Discord."
-tags = ["bash", "cli", "discord"]
 
 [[repos.source]]
 name = "observeroftime.github.io"
