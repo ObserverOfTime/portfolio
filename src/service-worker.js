@@ -16,8 +16,8 @@ self.addEventListener('install', evt => {
 self.addEventListener('activate', evt => {
   evt.waitUntil(
     caches.keys().then(async keys => {
-      for(const key of keys) {
-        if(key !== ASSETS) await caches.delete(key);
+      for (const key of keys) {
+        if (key !== ASSETS) await caches.delete(key);
       }
       self.clients.claim();
     })
@@ -25,21 +25,21 @@ self.addEventListener('activate', evt => {
 });
 
 self.addEventListener('fetch', evt => {
-  if(evt.request.method !== 'GET' ||
-    evt.request.headers.has('range')) return;
+  if (evt.request.method !== 'GET' ||
+      evt.request.headers.has('range')) return;
 
   const url = new URL(evt.request.url);
 
-  if(!url.protocol.startsWith('http')) return;
-  if(url.hostname === self.location.hostname &&
-    url.port !== self.location.port) return;
+  if (!url.protocol.startsWith('http')) return;
+  if (url.hostname === self.location.hostname &&
+      url.port !== self.location.port) return;
 
-  if(url.host === self.location.host && cached.has(url.pathname)) {
+  if (url.host === self.location.host && cached.has(url.pathname)) {
     evt.respondWith(caches.match(evt.request));
     return;
   }
 
-  if(evt.request.cache === 'only-if-cached') return;
+  if (evt.request.cache === 'only-if-cached') return;
 
   evt.respondWith(
     caches.open(`offline${timestamp}`)
@@ -50,7 +50,7 @@ self.addEventListener('fetch', evt => {
           return response;
         } catch(err) {
           const response = await cache.match(evt.request);
-          if(response) return response;
+          if (response) return response;
           throw err;
         }
       })

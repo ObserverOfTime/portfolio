@@ -19,7 +19,10 @@ export default {
       serviceWorker: 'src/service-worker.js',
       template: 'src/template.html'
     },
-    hydrate: true,
+    browser: {
+      router: false,
+      hydrate: true
+    },
     paths: {
       assets: '',
       base: '/portfolio'
@@ -27,10 +30,9 @@ export default {
     prerender: {
       crawl: false,
       enabled: true,
+      default: true,
       entries: ['*']
     },
-    router: false,
-    target: '#svelte',
     trailingSlash: 'always',
     vite: {
       // base: '/portfolio/',

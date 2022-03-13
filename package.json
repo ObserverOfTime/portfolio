@@ -1,5 +1,5 @@
 {
-  "name": "@ObserverOfTime/portfolio",
+  "name": "@observeroftime/portfolio",
   "version": "0.2.1",
   "license": "MPL-2.0",
   "description": "A reusable portfolio website written in Svelte",
@@ -26,27 +26,25 @@
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.24",
-    "@sveltejs/kit": "^1.0.0-next.218",
-    "rollup": "^2.63.0",
-    "svelte": "^3.45.0",
-    "vite": "^2.7.10",
+    "@sveltejs/adapter-static": "^1.0.0-next.28",
+    "@sveltejs/kit": "^1.0.0-next.291",
+    "rollup": "^2.69.0",
+    "svelte": "^3.46.4",
+    "vite": "^2.8.6",
     "vite-plugin-toml": "^0.3.3"
   },
   "optionalDependencies": {
-    "eslint": "^8.6.0",
-    "eslint-plugin-svelte3": "^3.3.0",
-    "stylelint": "^14.2.0"
+    "eslint": "^8.10.0",
+    "eslint-plugin-svelte3": "^3.4.1",
+    "postcss-html": "^1.3.0",
+    "stylelint": "^14.5.3"
   },
   "resolutions": {
-    "ansi-regex": "^6.0.1",
-    "browserslist": "^4.19.1",
-    "esinstall": "^1.1.7",
+    "ansi-regex": "^5.0.1",
     "ini": "^2.0.0",
-    "lodash": "^4.17.21",
-    "postcss": "^8.4.4",
-    "source-map-resolve": "^0.6.0",
-    "trim-newlines": "^4.0.2"
+    "postcss": "^8.4.7",
+    "trim-newlines": "^3.0.1",
+    "vm2": "^3.9.9"
   },
   "eslintConfig": {
     "root": true,
@@ -352,6 +350,7 @@
   ],
   "stylelint": {
     "defaultSeverity": "warning",
+    "customSyntax": "postcss-html",
     "rules": {
       "at-rule-name-case": "lower",
       "at-rule-semicolon-newline-after": "always",

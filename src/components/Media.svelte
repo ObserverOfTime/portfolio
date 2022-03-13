@@ -4,13 +4,13 @@
     let mql, listener, mounted, matches;
 
     const removeListener = () => {
-      if(mql && listener) mql.removeListener(listener);
+      if (mql && listener) mql.removeListener(listener);
     };
 
     const addListener = (query) => {
       mql = window.matchMedia(query);
       listener = (q) => {matches = q.matches};
-      mql.addListener(listener);
+      mql.addEventListener('change', listener);
       matches = mql.matches;
     };
 
@@ -22,7 +22,7 @@
     export let query;
 
     $: {
-      if(mounted) {
+      if (mounted) {
         removeListener();
         addListener(query);
       }

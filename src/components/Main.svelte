@@ -1,6 +1,5 @@
 <script>
   import Repository from './Repository';
-  import Tooltip from './Tooltip';
   export let repos;
 </script>
 

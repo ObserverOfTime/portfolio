@@ -114,12 +114,12 @@ config.links.packages = map(Object.entries({
  * @function ghurl
  * @param {string} repo - The name of the repo.
  * @param {string} type - The type of the repo.
- * @return {stirng} The URL of the repo.
+ * @return {string} The URL of the repo.
  */
 const ghurl = (repo, type) => {
   const href = config.links.vcs.find(l => l.title === 'GitHub').href;
-  if(!repo.includes('/')) return `${href}/${repo}`;
-  if(type !== 'contribution') return `https://github.com/${repo}`;
+  if (!repo.includes('/')) return `${href}/${repo}`;
+  if (type !== 'contribution') return `https://github.com/${repo}`;
   return href.replace(/[\w-]+$/, `${repo}/commits?author=$&`);
 };
 

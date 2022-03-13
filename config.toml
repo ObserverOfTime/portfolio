@@ -11,7 +11,7 @@ resume = "https://github.com/ObserverOfTime/resume/releases/latest/download/Resu
 # https://www.facebook.com/{facebook}
 facebook = ""
 # https://www.linkedin.com/in/{linkedin}
-linkedin = "yohane"
+linkedin = "chronobserver"
 # https://reddit.com/user/{reddit}
 reddit = "ObserverOfTime"
 # https://trello.com/{trello}
@@ -56,7 +56,7 @@ gitgud = ""
 github = "ObserverOfTime"
 # https://gitlab.com/{gitlab}
 gitlab = "ObserverOfTime"
-# https://git.rip/{}
+# https://git.rip/{gitrip}
 gitrip = ""
 # https://gitlab.gnome.org/{gnome}
 gnome = ""
@@ -81,7 +81,7 @@ ctan = ""
 # https://hub.docker.com/publishers/{docker}
 docker = ""
 # https://github.com/{gpr}?tab=packages
-gpr = "ObserverOfTime"
+gpr = ""
 # https://launchpad.net/~{launchpad}
 launchpad = "chronobserver"
 # https://www.npmjs.com/~{npmjs}
@@ -131,11 +131,6 @@ description = "Like :tabedit but with multiple arguments."
 tags = ["vim", "plugin"]
 
 [[repos.source]]
-name = "ncm2-jc2"
-description = "vim-javacomplete2 source for ncm2."
-tags = ["vim", "plugin"]
-
-[[repos.source]]
 name = "enumagic.py"
 description = "Python enums infused with magic."
 tags = ["python", "django", "library"]
@@ -148,7 +143,7 @@ tags = ["config", "dotfiles", "mpv", "arch"]
 [[repos.source]]
 name = "dotnvim"
 description = "My Neovim configuration."
-tags = ["config", "dotfiles", "vim", "python"]
+tags = ["config", "dotfiles", "vim", "lua"]
 
 [[repos.source]]
 name = "PKGBUILDS"
@@ -172,6 +167,12 @@ name = "discord.nvim"
 source = "https://github.com/aurieh/discord.nvim"
 description = "Discord Rich Presence for Neovim."
 tags = ["vim", "python", "plugin", "discord"]
+
+[[repos.fork]]
+name = "nvim-snippy"
+source = "https://github.com/mg979/nvim-snippy"
+description = " Snippet plugin for Neovim."
+tags = ["vim", "lua", "plugin"]
 
 [[repos.fork]]
 name = "PathOfExileRPC"
@@ -245,6 +246,11 @@ description = "Vim fork focused on extensibility and usability."
 tags = ["vim", "tui", "app"]
 
 [[repos.contribution]]
+name = "jose-elias-alvarez/null-ls.nvim"
+description = "Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua."
+tags = ["vim", "lua", "plugin"]
+
+[[repos.contribution]]
 name = "dense-analysis/ale"
 description = "Check syntax in Vim asynchronously and fix files."
 tags = ["vim", "plugin"]
@@ -258,6 +264,11 @@ tags = ["vim", "plugin"]
 name = "SciADV-Community/maho-bot"
 description = "Fun utility bot for Discord."
 tags = ["python", "discord", "bot"]
+
+[[repos.contribution]]
+name = "subject-f/cubarimoe"
+description = "An image proxy powered by the Cubari reader."
+tags = ["python", "site"]
 
 [[repos.contribution]]
 name = "lutris/lutris"
