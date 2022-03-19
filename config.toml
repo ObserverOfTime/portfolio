@@ -126,6 +126,11 @@ description = "What's the longest word you can write with seven-segment displays
 tags = ["multilanguage"]
 
 [[repos.source]]
+name = "nvimcord"
+description = "A Discord Rich Presence plugin for Neovim written in Lua."
+tags = ["vim", "lua", "plugin"]
+
+[[repos.source]]
 name = "multiedit.vim"
 description = "Like :tabedit but with multiple arguments."
 tags = ["vim", "plugin"]
