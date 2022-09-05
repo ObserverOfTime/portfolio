@@ -1,8 +1,8 @@
-import {timestamp, files, build as shell} from '$service-worker';
+import {version, files, build} from '$service-worker';
 
-const ASSETS = `cache${timestamp}`;
+const ASSETS = `cache${version}`;
 
-const to_cache = shell.concat(files);
+const to_cache = build.concat(files);
 const cached = new Set(to_cache);
 
 self.addEventListener('install', evt => {
@@ -42,7 +42,7 @@ self.addEventListener('fetch', evt => {
   if (evt.request.cache === 'only-if-cached') return;
 
   evt.respondWith(
-    caches.open(`offline${timestamp}`)
+    caches.open(`offline${version}`)
       .then(async cache => {
         try {
           const response = await fetch(evt.request);

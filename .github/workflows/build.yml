@@ -10,20 +10,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         name: Checkout repository
-      - uses: actions/setup-node@v2
-        name: Setup Node.js
+      - uses: actions/setup-node@v3
+        name: Set up Node.js
       - name: Install package with yarn
         run: yarn --frozen-lockfile
       - name: Lint code with eslint & stylelint
         run: yarn lint:js && yarn lint:css
         continue-on-error: true
       - name: Build site with svelte-kit
-        run: yarn build
+        run: >-
+          yarn build &&
+          cd build/portfolio &&
+          touch .nojekyll &&
+          rm vite-manifest.json
       - name: Deploy site to GitHub pages
         if: github.ref == 'refs/heads/master'
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           branch: gh-pages
           single-commit: true

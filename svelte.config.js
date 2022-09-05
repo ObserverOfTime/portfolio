@@ -1,5 +1,4 @@
 import adapter from '@sveltejs/adapter-static';
-import {ViteToml} from 'vite-plugin-toml';
 
 export default {
   compilerOptions: {
@@ -10,18 +9,12 @@ export default {
     adapter: adapter({
       pages: 'build/portfolio', assets: 'build/portfolio'
     }),
-    amp: false,
-    appDir: 'app',
     files: {
       assets: 'static',
       lib: 'src/components',
       routes: 'src/routes',
       serviceWorker: 'src/service-worker.js',
-      template: 'src/template.html'
-    },
-    browser: {
-      router: false,
-      hydrate: true
+      appTemplate: 'src/template.html'
     },
     paths: {
       assets: '',
@@ -30,23 +23,18 @@ export default {
     prerender: {
       crawl: false,
       enabled: true,
-      default: true,
       entries: ['*']
     },
-    trailingSlash: 'always',
-    vite: {
-      // base: '/portfolio/',
-      clearScreen: false,
-      mode: process.env.NODE_ENV || 'production',
-      plugins: [
-        ViteToml({useBigInt: false, namedExports: true})
-      ],
-      resolve: {
-        extensions: ['.js', '.svelte']
-      },
-      server: {
-        fs: {strict: false}
+    csp: {
+      mode: 'hash',
+      directives: {
+        'script-src': ['self'],
+        'style-src': ['self', 'unsafe-inline']
       }
-    }
+    },
+    serviceWorker: {
+      register: true
+    },
+    trailingSlash: 'always'
   }
 };

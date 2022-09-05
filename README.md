@@ -16,6 +16,10 @@ Reusable portfolio website written in [Svelte][].
 
 ## Changelog
 
+### v0.3.0
+
+* Updated svelte-kit configuration
+
 ### v0.2.1
 
 * Added femgit

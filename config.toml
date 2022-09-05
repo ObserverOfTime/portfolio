@@ -41,7 +41,7 @@ disroot = "chronobserver"
 # https://fem.mint.lgbt/{femgit}
 femgit = ""
 # https://framagit.org/{framagit}
-framagit = ""
+framagit = "ObserverOfTime"
 # https://gitlab.freedesktop.org/{freedesktop}
 freedesktop = ""
 # https://git.fosscommunity.in/{fsci}
@@ -289,6 +289,12 @@ tags = ["python", "cli", "app"]
 name = "Syncplay/syncplay"
 description = "Media player synchronisation over the internet."
 tags = ["python", "gui", "app"]
+
+[[repos.contribution]]
+name = "peppercarrot/webcomics"
+url = "https://framagit.org/peppercarrot/webcomics/-/commits/master?author=Observer of Time"
+description = "A free, libre and open-source webcomic."
+tags = ["webcomic", "translation"]
 
 [[repos.contribution]]
 name = "hitomi-team/discord-ipc-bridge"
