@@ -30,6 +30,7 @@ config.links.social = map(Object.entries({
 }), config.links.social);
 
 config.links.vcs = map(Object.entries({
+  arch: ['https://gitlab.archlinux.org/{}', 'Arch Linux GitLab'],
   bitbucket: ['https://bitbucket.org/{}', 'Bitbucket'],
   codeberg: ['https://codeberg.org/{}', 'Codeberg'],
   collabora: ['https://codeberg.org/{}', 'Collabora GitLab'],

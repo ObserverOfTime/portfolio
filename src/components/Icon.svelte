@@ -16,6 +16,7 @@
 </style>
 
 <Tooltip text={title}>
+  <!-- svelte-ignore security-anchor-rel-noreferrer -->
   <a {href} target="_blank" name="i-{icon}" rel="noopener">
     <svg class="icon i-{icon}">
       <use href="#i-{icon}"/>

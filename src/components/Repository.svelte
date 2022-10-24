@@ -38,6 +38,7 @@
 </style>
 
 <section class="repo">
+  <!-- svelte-ignore security-anchor-rel-noreferrer -->
   <a class="repo-title" href={repo.url} target="_blank" rel="noopener">
     {repo.name.replace('/', '/\u200b')}
   </a>

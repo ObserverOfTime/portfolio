@@ -26,6 +26,8 @@ twitter = "chronobserver"
 youtube = ""
 
 [links.vcs]
+# https://gitlab.archlinux.org/{arch}
+arch = "observeroftime"
 # https://bitbucket.org/{bitbucket}
 bitbucket = ""
 # https://codeberg.org/{codeberg}
@@ -101,9 +103,9 @@ description = "Yet another dotenv parser for Python."
 tags = ["python", "django", "library"]
 
 [[repos.source]]
-name = "DiscordThemes"
-description = "A collection of my custom Discord themes."
-tags = ["css", "theme", "discord"]
+name = "mpv-scripts"
+description = "My personal mpv scripts."
+tags = ["lua", "mpv"]
 
 [[repos.source]]
 name = "resume"
@@ -116,11 +118,6 @@ description = "Reusable portfolio website made with Svelte."
 tags = ["svelte", "javascript", "template"]
 
 [[repos.source]]
-name = "mpv-scripts"
-description = "My personal mpv scripts."
-tags = ["lua", "mpv"]
-
-[[repos.source]]
 name = "7SegmentDisplays"
 description = "What's the longest word you can write with seven-segment displays?"
 tags = ["multilanguage"]
@@ -131,6 +128,26 @@ description = "A Discord Rich Presence plugin for Neovim written in Lua."
 tags = ["vim", "lua", "plugin"]
 
 [[repos.source]]
+name = "tree-sitter-gitattributes"
+description = "gitattributes grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.source]]
+name = "tree-sitter-pymanifest"
+description = "PyPA manifest grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "python", "library"]
+
+[[repos.source]]
+name = "tree-sitter-chatito"
+description = "Chatito grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.source]]
+name = "tree-sitter-poe-filter"
+description = "PoE item filter grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.source]]
 name = "multiedit.vim"
 description = "Like :tabedit but with multiple arguments."
 tags = ["vim", "plugin"]
@@ -139,6 +156,11 @@ tags = ["vim", "plugin"]
 name = "enumagic.py"
 description = "Python enums infused with magic."
 tags = ["python", "django", "library"]
+
+[[repos.source]]
+name = "DiscordThemes"
+description = "A collection of my custom Discord themes."
+tags = ["css", "theme", "discord"]
 
 [[repos.source]]
 name = "home.files"
@@ -178,12 +200,6 @@ name = "nvim-snippy"
 source = "https://github.com/mg979/nvim-snippy"
 description = " Snippet plugin for Neovim."
 tags = ["vim", "lua", "plugin"]
-
-[[repos.fork]]
-name = "PathOfExileRPC"
-source = "https://github.com/xKynn/PathOfExileRPC"
-description = "Discord RPC Client for Path of Exile that works on Linux."
-tags = ["python", "cli", "discord"]
 
 [[repos.organisation]]
 name = "mangadventure/MangAdventure"
@@ -246,14 +262,36 @@ description = "Non-judgmental guidance on choosing a license for your open sourc
 tags = ["ruby", "site"]
 
 [[repos.contribution]]
+name = "vim/vim"
+description = "The ubiquitous text editor."
+tags = ["vim", "tui", "app"]
+
+[[repos.contribution]]
 name = "neovim/neovim"
 description = "Vim fork focused on extensibility and usability."
 tags = ["vim", "tui", "app"]
 
 [[repos.contribution]]
+name = "nvim-treesitter/nvim-treesitter"
+description = "Nvim Treesitter configurations and abstraction layer."
+tags = ["vim", "lua", "plugin"]
+
+[[repos.contribution]]
 name = "jose-elias-alvarez/null-ls.nvim"
 description = "Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua."
 tags = ["vim", "lua", "plugin"]
+
+[[repos.contribution]]
+name = "peppercarrot/webcomics"
+url = "https://framagit.org/peppercarrot/webcomics/-/commits/master?author=Observer+of+Time"
+description = "A free, libre and open-source webcomic."
+tags = ["webcomic", "translation"]
+
+[[repos.contribution]]
+name = "pacman/pacman-contrib"
+url = "https://gitlab.archlinux.org/pacman/pacman-contrib/-/commits/master?author=ObserverOfTime"
+description = "Contributed scripts and tools for pacman systems."
+tags = ["vim", "plugin"]
 
 [[repos.contribution]]
 name = "dense-analysis/ale"
@@ -264,16 +302,6 @@ tags = ["vim", "plugin"]
 name = "cakebaker/scss-syntax.vim"
 description = "Vim syntax file for SCSS."
 tags = ["vim", "plugin"]
-
-[[repos.contribution]]
-name = "SciADV-Community/maho-bot"
-description = "Fun utility bot for Discord."
-tags = ["python", "discord", "bot"]
-
-[[repos.contribution]]
-name = "subject-f/cubarimoe"
-description = "An image proxy powered by the Cubari reader."
-tags = ["python", "site"]
 
 [[repos.contribution]]
 name = "lutris/lutris"
@@ -291,10 +319,15 @@ description = "Media player synchronisation over the internet."
 tags = ["python", "gui", "app"]
 
 [[repos.contribution]]
-name = "peppercarrot/webcomics"
-url = "https://framagit.org/peppercarrot/webcomics/-/commits/master?author=Observer of Time"
-description = "A free, libre and open-source webcomic."
-tags = ["webcomic", "translation"]
+name = "SciADV-Community/maho-bot"
+description = "Fun utility bot for Discord."
+tags = ["python", "discord", "bot"]
+
+[[repos.contribution]]
+name = "subject-f/cubarimoe"
+url = "https://github.com/subject-f/cubarimoe/commits/develop?author=ObserverOfTime"
+description = "An image proxy powered by the Cubari reader."
+tags = ["python", "site"]
 
 [[repos.contribution]]
 name = "hitomi-team/discord-ipc-bridge"

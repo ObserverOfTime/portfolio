@@ -1,4 +1,4 @@
-import {sveltekit} from '@sveltejs/kit/vite'
+import {sveltekit} from '@sveltejs/kit/vite';
 import {ViteToml} from 'vite-plugin-toml';
 
 export default {
@@ -14,4 +14,4 @@ export default {
   server: {
     fs: {strict: false}
   }
-}
+};

@@ -16,6 +16,10 @@ Reusable portfolio website written in [Svelte][].
 
 ## Changelog
 
+### v0.3.1
+
+* Added Arch Linux GitLab
+
 ### v0.3.0
 
 * Updated svelte-kit configuration
