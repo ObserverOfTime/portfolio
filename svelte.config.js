@@ -22,7 +22,6 @@ export default {
     },
     prerender: {
       crawl: false,
-      enabled: true,
       entries: ['*']
     },
     csp: {
@@ -34,7 +33,6 @@ export default {
     },
     serviceWorker: {
       register: true
-    },
-    trailingSlash: 'always'
+    }
   }
 };

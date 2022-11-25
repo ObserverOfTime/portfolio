@@ -202,6 +202,11 @@ description = " Snippet plugin for Neovim."
 tags = ["vim", "lua", "plugin"]
 
 [[repos.organisation]]
+name = "nvim-treesitter/nvim-treesitter"
+description = "Nvim Treesitter configurations and abstraction layer."
+tags = ["vim", "lua", "plugin"]
+
+[[repos.organisation]]
 name = "mangadventure/MangAdventure"
 description = "A simple manga hosting CMS written in Django."
 tags = ["python", "django", "scss", "javascript", "site", "manga"]
@@ -270,11 +275,6 @@ tags = ["vim", "tui", "app"]
 name = "neovim/neovim"
 description = "Vim fork focused on extensibility and usability."
 tags = ["vim", "tui", "app"]
-
-[[repos.contribution]]
-name = "nvim-treesitter/nvim-treesitter"
-description = "Nvim Treesitter configurations and abstraction layer."
-tags = ["vim", "lua", "plugin"]
 
 [[repos.contribution]]
 name = "jose-elias-alvarez/null-ls.nvim"
