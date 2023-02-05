@@ -64,6 +64,8 @@ gitrip = ""
 gnome = ""
 # https://invent.kde.org/{kde}
 kde = ""
+# https://notabug.org/{notabug}
+notabug = ""
 # https://sourceforge.net/users/{sourceforge}
 sourceforge = ""
 # https://sr.ht/~{sourcehut}
@@ -204,6 +206,11 @@ tags = ["vim", "lua", "plugin"]
 [[repos.organisation]]
 name = "nvim-treesitter/nvim-treesitter"
 description = "Nvim Treesitter configurations and abstraction layer."
+tags = ["vim", "lua", "plugin"]
+
+[[repos.organisation]]
+name = "nvim-treesitter/nvim-treesitter-textobjects"
+description = "Syntax aware text-objects, select, move, swap, and peek support."
 tags = ["vim", "lua", "plugin"]
 
 [[repos.organisation]]

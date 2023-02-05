@@ -16,6 +16,11 @@ Reusable portfolio website written in [Svelte][].
 
 ## Changelog
 
+### v0.3.2
+
+* Added NotABug.org
+* Updated Disroot Git logo
+
 ### v0.3.1
 
 * Added Arch Linux GitLab
