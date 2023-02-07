@@ -21,9 +21,14 @@ tumblr = ""
 # https://www.twitch.tv/{twitch}
 twitch = ""
 # https://twitter.com/{twitter}
-twitter = "chronobserver"
+twitter = ""
 # https://www.youtube.com/user/{youtube}
 youtube = ""
+
+[links.social.mastodon]
+# https://{server}/@{username}
+username = "chronobserver"
+server = "uwu.social"
 
 [links.vcs]
 # https://gitlab.archlinux.org/{arch}

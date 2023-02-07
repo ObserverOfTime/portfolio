@@ -18,6 +18,8 @@ const map = (arr, obj) => arr.reduce((acc, [k, v]) =>
   }) || acc, []
 );
 
+const mastodon = config.links.social.mastodon;
+
 config.links.social = map(Object.entries({
   facebook: ['https://www.facebook.com/{}', 'Facebook'],
   linkedin: ['https://www.linkedin.com/in/{}', 'LinkedIn'],
@@ -28,6 +30,13 @@ config.links.social = map(Object.entries({
   twitter: ['https://twitter.com/{}', 'Twitter'],
   youtube: ['https://www.youtube.com/user/{}', 'YouTube']
 }), config.links.social);
+
+if (mastodon.username && mastodon.server) {
+  config.links.social.push({
+    href: `https://${mastodon.server}/@${mastodon.username}`,
+    title: 'Mastodon', icon: 'mastodon'
+  });
+}
 
 config.links.vcs = map(Object.entries({
   arch: ['https://gitlab.archlinux.org/{}', 'Arch Linux GitLab'],

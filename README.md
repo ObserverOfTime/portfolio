@@ -18,6 +18,7 @@ Reusable portfolio website written in [Svelte][].
 
 ### v0.3.2
 
+* Added Mastodon
 * Added NotABug.org
 * Updated Disroot Git logo
 

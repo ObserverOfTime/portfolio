@@ -20,11 +20,7 @@ jobs:
         run: yarn lint:js && yarn lint:css
         continue-on-error: true
       - name: Build site with svelte-kit
-        run: >-
-          yarn build &&
-          cd build/portfolio &&
-          touch .nojekyll &&
-          rm vite-manifest.json
+        run: yarn build && touch build/portfolio/.nojekyll
       - name: Deploy site to GitHub pages
         if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@v4.4.0
