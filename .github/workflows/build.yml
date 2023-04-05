@@ -5,6 +5,16 @@ on:
     branches-ignore: ['gh-pages']
   pull_request:
     branches-ignore: ['gh-pages']
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -14,17 +24,27 @@ jobs:
         name: Checkout repository
       - uses: actions/setup-node@v3
         name: Set up Node.js
+        with:
+          cache: yarn
       - name: Install package with yarn
         run: yarn --frozen-lockfile
       - name: Lint code with eslint & stylelint
         run: yarn lint:js && yarn lint:css
         continue-on-error: true
       - name: Build site with svelte-kit
-        run: yarn build && touch build/portfolio/.nojekyll
-      - name: Deploy site to GitHub pages
-        if: github.ref == 'refs/heads/master'
-        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        run: yarn build
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          branch: gh-pages
-          single-commit: true
-          folder: build/portfolio
+          path: build/portfolio
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

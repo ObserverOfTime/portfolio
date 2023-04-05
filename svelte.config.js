@@ -1,4 +1,5 @@
 import adapter from '@sveltejs/adapter-static';
+import {execSync} from 'node:child_process';
 
 export default {
   compilerOptions: {
@@ -6,8 +7,10 @@ export default {
     dev: process.env.NODE_ENV === 'development'
   },
   kit: {
+    appDir: 'app',
     adapter: adapter({
-      pages: 'build/portfolio', assets: 'build/portfolio'
+      pages: 'build/portfolio',
+      assets: 'build/portfolio'
     }),
     files: {
       assets: 'static',
@@ -17,8 +20,8 @@ export default {
       appTemplate: 'src/template.html'
     },
     paths: {
-      assets: '',
-      base: '/portfolio'
+      base: '/portfolio',
+      relative: false
     },
     prerender: {
       crawl: false,
@@ -31,8 +34,14 @@ export default {
         'style-src': ['self', 'unsafe-inline']
       }
     },
+    output: {
+      preloadStrategy: 'preload-mjs'
+    },
     serviceWorker: {
-      register: true
+      files: file => !(/\.nojekyll/).test(file)
+    },
+    version: {
+      name: execSync('git rev-parse HEAD').toString().trim()
     }
   }
 };
