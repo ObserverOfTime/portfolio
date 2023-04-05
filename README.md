@@ -16,6 +16,10 @@ Reusable portfolio website written in [Svelte][].
 
 ## Changelog
 
+### v0.3.3
+
+* Updated Disroot Git logo again
+
 ### v0.3.2
 
 * Added Mastodon
