@@ -2,9 +2,9 @@ name: Build & deploy portfolio
 
 on:
   push:
-    branches-ignore: ['gh-pages']
+    branches: ['*']
   pull_request:
-    branches-ignore: ['gh-pages']
+    branches: ['master']
   workflow_dispatch:
 
 concurrency:
@@ -41,6 +41,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
