@@ -28,7 +28,7 @@
   }
 </style>
 
-<div class="tooltip"
+<div class="tooltip" role="tooltip"
      on:mouseover={() => {visible = true}}
      on:focus={() => {visible = true}}
      on:mouseout={() => {visible = false}}

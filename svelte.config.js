@@ -3,7 +3,7 @@ import {execSync} from 'node:child_process';
 
 export default {
   compilerOptions: {
-    css: false,
+    css: 'external',
     dev: process.env.NODE_ENV === 'development'
   },
   kit: {

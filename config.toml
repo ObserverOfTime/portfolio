@@ -132,7 +132,7 @@ tags = ["multilanguage"]
 [[repos.source]]
 name = "nvimcord"
 description = "A Discord Rich Presence plugin for Neovim written in Lua."
-tags = ["vim", "lua", "plugin"]
+tags = ["lua", "vim", "plugin"]
 
 [[repos.source]]
 name = "tree-sitter-gitattributes"
@@ -150,9 +150,19 @@ description = "Chatito grammar for tree-sitter."
 tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.source]]
+name = "tree-sitter-pem"
+description = "PEM file grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.source]]
 name = "tree-sitter-poe-filter"
 description = "PoE item filter grammar for tree-sitter."
 tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.source]]
+name = "poe-discord-rpc"
+description = "Path of Exile Discord RPC."
+tags = ["typescript", "deno", "cli", "discord"]
 
 [[repos.source]]
 name = "multiedit.vim"
@@ -162,7 +172,7 @@ tags = ["vim", "plugin"]
 [[repos.source]]
 name = "enumagic.py"
 description = "Python enums infused with magic."
-tags = ["python", "django", "library"]
+tags = ["python", "library"]
 
 [[repos.source]]
 name = "DiscordThemes"
