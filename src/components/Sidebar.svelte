@@ -62,7 +62,7 @@
         <Icon icon="homepage" href={info.homepage} title="Homepage"/>
       </nav>
       <article id="bio">{info.bio.trim()}</article>
-      <img id="avatar" src="avatar.jpg" alt="Avatar">
+      <img id="avatar" src="/portfolio/avatar.jpg" alt="Avatar">
       <nav id="social" class="links">
         <h3>Social Platforms</h3>
         {#each links.social as icon}

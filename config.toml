@@ -150,6 +150,11 @@ description = "Chatito grammar for tree-sitter."
 tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.source]]
+name = "tree-sitter-arduino"
+description = "Arduino grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.source]]
 name = "tree-sitter-pem"
 description = "PEM file grammar for tree-sitter."
 tags = ["tree-sitter", "javascript", "library"]
