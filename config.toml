@@ -5,7 +5,7 @@ Open source enthusiast, Kotlin evangelist, Vim extraordinaire.
 email = "chronobserver@disroot.org"
 homepage = "https://observeroftime.github.io"
 name = "ObserverOfTime"
-resume = "https://github.com/ObserverOfTime/resume/releases/latest/download/Resume-EN.pdf"
+resume = "https://observeroftime.github.io/resume/"
 
 [links.social]
 # https://www.facebook.com/{facebook}
@@ -94,7 +94,7 @@ gpr = ""
 # https://launchpad.net/~{launchpad}
 launchpad = "chronobserver"
 # https://www.npmjs.com/~{npmjs}
-npmjs = ""
+npmjs = "chronobserver"
 # https://www.nuget.org/profiles/{nuget}
 nuget = ""
 # https://build.opensuse.org/users/{obs}
@@ -115,14 +115,14 @@ description = "My personal mpv scripts."
 tags = ["lua", "mpv"]
 
 [[repos.source]]
-name = "resume"
-description = "Reusable resume made with RelaxedJS."
-tags = ["pug", "scss", "template"]
-
-[[repos.source]]
 name = "portfolio"
 description = "Reusable portfolio website made with Svelte."
 tags = ["svelte", "javascript", "template"]
+
+[[repos.source]]
+name = "jsonresume-theme-relaxed"
+description = "A JSON Resume theme optimised for PDF output."
+tags = ["livescript", "stylus", "template"]
 
 [[repos.source]]
 name = "7SegmentDisplays"
