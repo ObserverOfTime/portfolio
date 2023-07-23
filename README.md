@@ -19,6 +19,7 @@ Reusable portfolio website written in [Svelte][].
 ### v0.3.4
 
 * Added Matrix
+* Added a schema for `config.toml`
 
 ### v0.3.3
 

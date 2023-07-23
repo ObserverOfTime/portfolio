@@ -1,0 +1,165 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "info": {"$ref": "#/definitions/Info"},
+    "links": {"$ref": "#/definitions/Links"},
+    "repos": {
+      "type": "object",
+      "properties": {
+        "source": {"$ref": "#/definitions/Repos"},
+        "fork": {"$ref": "#/definitions/Repos"},
+        "organisation": {"$ref": "#/definitions/Repos"},
+        "contribution": {"$ref": "#/definitions/Repos"}
+      },
+      "minProperties": 1,
+      "additionalProperties": false
+    }
+  },
+  "definitions": {
+    "Info": {
+      "type": "object",
+      "properties": {
+        "bio": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "homepage": {
+          "type": "string",
+          "format": "uri"
+        },
+        "name": {
+          "type": "string"
+        },
+        "resume": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "bio",
+        "email",
+        "homepage",
+        "name",
+        "resume"
+      ]
+    },
+    "Links": {
+      "type": "object",
+      "properties": {
+        "social": {
+          "type": "object",
+          "properties": {
+            "mastodon": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "default": ""
+                },
+                "server": {
+                  "type": "string",
+                  "format": "hostname",
+                  "default": "mastodon.social"
+                }
+              },
+              "required": ["username"]
+            },
+            "matrix": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "default": ""
+                },
+                "server": {
+                  "type": "string",
+                  "format": "hostname",
+                  "default": "matrix.org"
+                }
+              },
+              "required": ["username"]
+            }
+          },
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "default": ""
+          },
+          "propertyNames": {
+            "pattern": "^[a-z]+$"
+          }
+        },
+        "vcs": {
+          "type": "object",
+          "properties": {
+            "github": {"type": "string"}
+          },
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "default": ""
+          },
+          "propertyNames": {
+            "pattern": "^[a-z]+$"
+          },
+          "required": ["github"]
+        },
+        "packages": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "default": ""
+          },
+          "propertyNames": {
+            "pattern": "^[a-z]+$"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "social",
+        "vcs",
+        "packages"
+      ]
+    },
+    "Repos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {"type": "string"},
+            "minItems": 0
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "source": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "description",
+          "tags"
+        ]
+      }
+    }
+  }
+}
