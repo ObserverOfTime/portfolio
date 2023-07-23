@@ -1,15 +1,15 @@
-/** @module config */
-
 import config from '../config.toml';
+
+/** @type {Config} */
+const copy = {info: config.info, links: {}, repos: {}};
 
 /**
  * Map usernames to links.
  *
  * @private
- * @function map
- * @param {Array.<string>} arr - An array of usernames.
- * @param {Array.<Object.<string, string>>} obj - A mapping object.
- * @return {Array.<Object.<string, string>>} An array of link objects.
+ * @param {[string, [string, string]][]} arr An array of usernames.
+ * @param {Record<string, string>[]} obj A mapping object.
+ * @return {Link[]} An array of link objects.
  */
 const map = (arr, obj) => arr.reduce((acc, [k, v]) =>
   obj[k] && acc.concat({
@@ -18,9 +18,9 @@ const map = (arr, obj) => arr.reduce((acc, [k, v]) =>
   }) || acc, []
 );
 
-const mastodon = config.links.social.mastodon;
+const {mastodon, matrix} = config.links.social;
 
-config.links.social = map(Object.entries({
+copy.links.social = map(Object.entries({
   facebook: ['https://www.facebook.com/{}', 'Facebook'],
   linkedin: ['https://www.linkedin.com/in/{}', 'LinkedIn'],
   reddit: ['https://reddit.com/user/{}', 'Reddit'],
@@ -32,13 +32,27 @@ config.links.social = map(Object.entries({
 }), config.links.social);
 
 if (mastodon.username && mastodon.server) {
-  config.links.social.push({
+  if (!mastodon.server) mastodon.server = 'mastodon.social';
+  copy.links.social.push({
     href: `https://${mastodon.server}/@${mastodon.username}`,
     title: 'Mastodon', icon: 'mastodon'
   });
 }
 
-config.links.vcs = map(Object.entries({
+if (matrix.username && matrix.server) {
+  if (!matrix.server) matrix.server = 'matrix.org';
+  matrix.username += ':' + matrix.server;
+  copy.links.social.push({
+    href: `https://matrix.to/#/@${matrix.username}`,
+    title: 'Matrix', icon: 'matrix'
+  });
+}
+
+// ensure the links are sorted
+copy.links.social = copy.links.social
+  .sort((a, b) => a.icon.localeCompare(b.icon));
+
+copy.links.vcs = map(Object.entries({
   arch: ['https://gitlab.archlinux.org/{}', 'Arch Linux GitLab'],
   bitbucket: ['https://bitbucket.org/{}', 'Bitbucket'],
   codeberg: ['https://codeberg.org/{}', 'Codeberg'],
@@ -63,7 +77,7 @@ config.links.vcs = map(Object.entries({
   sourcehut: ['https://sr.ht/~{}', 'sourcehut']
 }), config.links.vcs);
 
-config.links.packages = map(Object.entries({
+copy.links.packages = map(Object.entries({
   aur: [
     'https://aur.archlinux.org/packages/?SeB=M&K={}',
     'Arch User Repository'
@@ -122,44 +136,47 @@ config.links.packages = map(Object.entries({
  * Get the GitHub URL of a repo.
  *
  * @private
- * @function ghurl
- * @param {string} repo - The name of the repo.
- * @param {string} type - The type of the repo.
+ * @param {string} repo The name of the repo.
+ * @param {string} type The type of the repo.
  * @return {string} The URL of the repo.
  */
 const ghurl = (repo, type) => {
-  const href = config.links.vcs.find(l => l.title === 'GitHub').href;
-  if (!repo.includes('/')) return `${href}/${repo}`;
+  const user = config.links.vcs.github;
+  if (!user) throw Error('links.vcs.github is required');
+  if (!repo.includes('/')) return `https://github.com/${user}/${repo}`;
   if (type !== 'contribution') return `https://github.com/${repo}`;
-  return href.replace(/[\w-]+$/, `${repo}/commits?author=$&`);
+  return `https://github.com/${repo}/commits?author=$${user}`;
 };
 
 // merge repos & set urls
-config.repos = Object.keys(config.repos).reduce((acc, key) =>
+copy.repos = Object.keys(config.repos).reduce((acc, key) =>
   acc.concat(Object.values(config.repos[key]).reduce((it, val) =>
     it.concat({url: ghurl(val.name, key), type: key, ...val}), []
   )), []
 );
 
 /**
- * An object containing information about the user.
- *
- * @member module:config~info
- * @type {Object.<string, string>}
+ * @typedef {Object} Link
+ * @property {string} href
+ * @property {string} title
+ * @property {string} icon
  */
 
 /**
- * An object containing the user's links.
- *
- * @member module:config~links
- * @type {Object.<string, Array.<Object.<string, string>>>}
+ * @typedef {Object} Repo
+ * @property {string} url
+ * @property {string} type
+ * @property {string} name
+ * @property {string} description
+ * @property {string[]} tags
+ * @property {string?} source
  */
 
 /**
- * An array containing the user's repositories.
- *
- * @member module:config~repos
- * @type {Array.<Object.<string, string>>}
+ * @typedef {Object} Config
+ * @property {Record<string, string>} info The user's general info.
+ * @property {Record<string, Link[]>} links The user's links.
+ * @property {Repo[]} repos The user's repositories.
  */
 
-export const {info, links, repos} = config;
+export const {info, links, repos} = copy;

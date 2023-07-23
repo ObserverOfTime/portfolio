@@ -25,6 +25,11 @@ twitter = ""
 # https://www.youtube.com/user/{youtube}
 youtube = ""
 
+[links.social.matrix]
+# https://matrix.to/#/@{username}:{server}
+username = "instrumentalist"
+server = "yuri.im"
+
 [links.social.mastodon]
 # https://{server}/@{username}
 username = "chronobserver"
