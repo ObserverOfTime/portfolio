@@ -145,7 +145,7 @@ const ghurl = (repo, type) => {
   if (!user) throw Error('links.vcs.github is required');
   if (!repo.includes('/')) return `https://github.com/${user}/${repo}`;
   if (type !== 'contribution') return `https://github.com/${repo}`;
-  return `https://github.com/${repo}/commits?author=$${user}`;
+  return `https://github.com/${repo}/commits?author=${user}`;
 };
 
 // merge repos & set urls

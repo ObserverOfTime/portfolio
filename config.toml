@@ -182,6 +182,11 @@ description = "GPG config grammar for tree-sitter."
 tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.source]]
+name = "tree-sitter-udev"
+description = "udev rules grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.source]]
 name = "tree-sitter-pem"
 description = "PEM file grammar for tree-sitter."
 tags = ["tree-sitter", "javascript", "library"]
@@ -205,11 +210,6 @@ tags = ["vim", "plugin"]
 name = "enumagic.py"
 description = "Python enums infused with magic."
 tags = ["python", "library"]
-
-[[repos.source]]
-name = "DiscordThemes"
-description = "A collection of my custom Discord themes."
-tags = ["css", "theme", "discord"]
 
 [[repos.source]]
 name = "home.files"
@@ -247,7 +247,7 @@ tags = ["vim", "python", "plugin", "discord"]
 [[repos.fork]]
 name = "nvim-snippy"
 source = "https://github.com/mg979/nvim-snippy"
-description = " Snippet plugin for Neovim."
+description = "Snippet plugin for Neovim."
 tags = ["vim", "lua", "plugin"]
 
 [[repos.organisation]]
@@ -306,6 +306,16 @@ description = "Extension catalogues for the Tachiyomi app."
 tags = ["kotlin", "android", "plugin", "manga"]
 
 [[repos.contribution]]
+name = "vim/vim"
+description = "The ubiquitous text editor."
+tags = ["vim", "tui", "app"]
+
+[[repos.contribution]]
+name = "neovim/neovim"
+description = "Vim fork focused on extensibility and usability."
+tags = ["vim", "tui", "app"]
+
+[[repos.contribution]]
 name = "github/linguist"
 description = "GitHub Language detection."
 tags = ["ruby", "app", "library"]
@@ -321,31 +331,19 @@ description = "Non-judgmental guidance on choosing a license for your open sourc
 tags = ["ruby", "site"]
 
 [[repos.contribution]]
-name = "vim/vim"
-description = "The ubiquitous text editor."
-tags = ["vim", "tui", "app"]
+name = "fwcd/tree-sitter-kotlin"
+description = "Kotlin grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.contribution]]
-name = "neovim/neovim"
-description = "Vim fork focused on extensibility and usability."
-tags = ["vim", "tui", "app"]
+name = "lutris/lutris"
+description = "Open Source gaming platform for GNU/Linux."
+tags = ["python", "gui", "app"]
 
 [[repos.contribution]]
 name = "jose-elias-alvarez/null-ls.nvim"
 description = "Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua."
 tags = ["vim", "lua", "plugin"]
-
-[[repos.contribution]]
-name = "peppercarrot/webcomics"
-url = "https://framagit.org/peppercarrot/webcomics/-/commits/master?author=Observer+of+Time"
-description = "A free, libre and open-source webcomic."
-tags = ["webcomic", "translation"]
-
-[[repos.contribution]]
-name = "pacman/pacman-contrib"
-url = "https://gitlab.archlinux.org/pacman/pacman-contrib/-/commits/master?author=ObserverOfTime"
-description = "Contributed scripts and tools for pacman systems."
-tags = ["vim", "plugin"]
 
 [[repos.contribution]]
 name = "dense-analysis/ale"
@@ -358,9 +356,16 @@ description = "Vim syntax file for SCSS."
 tags = ["vim", "plugin"]
 
 [[repos.contribution]]
-name = "lutris/lutris"
-description = "Open Source gaming platform for GNU/Linux."
-tags = ["python", "gui", "app"]
+name = "pacman/pacman-contrib"
+url = "https://gitlab.archlinux.org/pacman/pacman-contrib/-/commits/master?author=ObserverOfTime"
+description = "Contributed scripts and tools for pacman systems."
+tags = ["vim", "plugin"]
+
+[[repos.contribution]]
+name = "peppercarrot/webcomics"
+url = "https://framagit.org/peppercarrot/webcomics/-/commits/master?author=Observer+of+Time"
+description = "A free, libre and open-source webcomic."
+tags = ["webcomic", "translation"]
 
 [[repos.contribution]]
 name = "python-poetry/poetry"
@@ -379,7 +384,6 @@ tags = ["python", "discord", "bot"]
 
 [[repos.contribution]]
 name = "subject-f/cubarimoe"
-url = "https://github.com/subject-f/cubarimoe/commits/develop?author=ObserverOfTime"
 description = "An image proxy powered by the Cubari reader."
 tags = ["python", "site"]
 
