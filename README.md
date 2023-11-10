@@ -16,6 +16,11 @@ Reusable portfolio website written in [Svelte][].
 
 ## Changelog
 
+### v0.3.5
+
+* Fixed GitHub contribution links
+* Update YouTube profile links
+
 ### v0.3.4
 
 * Added Matrix

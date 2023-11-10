@@ -17,15 +17,15 @@ linkedin = "chronobserver"
 # https://reddit.com/user/{reddit}
 reddit = "ObserverOfTime"
 # https://trello.com/{trello}
-trello = "chronobserver"
+trello = ""
 # https://www.tumblr.com/blog/{tumblr}
 tumblr = ""
 # https://www.twitch.tv/{twitch}
 twitch = ""
 # https://twitter.com/{twitter}
 twitter = ""
-# https://www.youtube.com/user/{youtube}
-youtube = ""
+# https://www.youtube.com/@{youtube}
+youtube = "chronobserver"
 
 [links.social.matrix]
 # https://matrix.to/#/@{username}:{server}
@@ -184,6 +184,11 @@ tags = ["tree-sitter", "javascript", "library"]
 [[repos.source]]
 name = "tree-sitter-udev"
 description = "udev rules grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.source]]
+name = "tree-sitter-xcompose"
+description = "XCompose file grammar for tree-sitter."
 tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.source]]

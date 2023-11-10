@@ -28,7 +28,7 @@ copy.links.social = map(Object.entries({
   tumblr: ['https://www.tumblr.com/blog/{}', 'Tumblr'],
   twitch: ['https://www.twitch.tv/{}', 'Twitch.tv'],
   twitter: ['https://twitter.com/{}', 'Twitter'],
-  youtube: ['https://www.youtube.com/user/{}', 'YouTube']
+  youtube: ['https://www.youtube.com/@{}', 'YouTube']
 }), config.links.social);
 
 if (mastodon.username && mastodon.server) {
