@@ -3,9 +3,15 @@
   "version": "0.3.5",
   "license": "MPL-2.0",
   "description": "A reusable portfolio website written in Svelte",
-  "repository": "github:ObserverOfTime/portfolio",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ObserverOfTime/portfolio.git"
+  },
   "homepage": "https://observeroftime.github.io/portfolio/",
-  "author": "ObserverOfTime <chronobserver@disroot.org>",
+  "author": {
+    "name": "ObserverOfTime",
+    "email": "chronobserver@disroot.org"
+  },
   "type": "module",
   "keywords": [
     "portfolio",
@@ -27,19 +33,20 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^2.0.3",
-    "@sveltejs/kit": "^1.27.3",
-    "rollup": "^4.3.0",
-    "svelte": "^4.2.2",
+    "@sveltejs/kit": "^1.27.6",
+    "rollup": "^4.6.0",
+    "svelte": "^4.2.7",
     "vite": "^4.5.0",
     "vite-plugin-toml": "^0.6.0"
   },
   "optionalDependencies": {
-    "eslint": "^8.53.0",
-    "eslint-plugin-svelte": "^2.35.0",
+    "eslint": "^8.54.0",
+    "eslint-plugin-svelte": "^2.35.1",
     "postcss-html": "^1.5.0",
     "stylelint": "^15.11.0",
     "stylelint-stylistic": "^0.4.3"
   },
+  "packageManager": "yarn@1.22.21",
   "resolutions": {
     "postcss": "^8.4.31",
     "semver": "^7.5.4"

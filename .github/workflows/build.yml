@@ -20,9 +20,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         name: Checkout repository
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         name: Set up Node.js
         with:
           cache: yarn
@@ -34,7 +34,7 @@ jobs:
       - name: Build site with svelte-kit
         run: yarn build
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: build/portfolio
 

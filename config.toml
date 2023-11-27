@@ -7,7 +7,7 @@ Open source enthusiast, Kotlin evangelist, Vim extraordinaire.
 email = "chronobserver@disroot.org"
 homepage = "https://observeroftime.github.io"
 name = "ObserverOfTime"
-resume = "https://observeroftime.github.io/resume/"
+resume = "https://registry.jsonresume.org/ObserverOfTime?theme=relaxed"
 
 [links.social]
 # https://www.facebook.com/{facebook}
@@ -138,7 +138,12 @@ tags = ["multilanguage"]
 
 [[repos.source]]
 name = "nvimcord"
-description = "A Discord Rich Presence plugin for Neovim written in Lua."
+description = "A Discord Rich Presence plugin for Neovim."
+tags = ["lua", "vim", "plugin"]
+
+[[repos.source]]
+name = "notifications.nvim"
+description = "Neovim plugin for desktop notifications."
 tags = ["lua", "vim", "plugin"]
 
 [[repos.source]]
@@ -254,6 +259,12 @@ name = "nvim-snippy"
 source = "https://github.com/mg979/nvim-snippy"
 description = "Snippet plugin for Neovim."
 tags = ["vim", "lua", "plugin"]
+
+[[repos.fork]]
+name = "htmls"
+source = "https://github.com/Daiz/htmls"
+description = "LiveScript HTML template engine."
+tags = ["livescript", "template"]
 
 [[repos.organisation]]
 name = "nvim-treesitter/nvim-treesitter"
