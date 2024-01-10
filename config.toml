@@ -212,14 +212,14 @@ description = "Path of Exile Discord RPC."
 tags = ["typescript", "deno", "cli", "discord"]
 
 [[repos.source]]
-name = "multiedit.vim"
-description = "Like :tabedit but with multiple arguments."
-tags = ["vim", "plugin"]
-
-[[repos.source]]
 name = "enumagic.py"
 description = "Python enums infused with magic."
 tags = ["python", "library"]
+
+[[repos.source]]
+name = "multiedit.vim"
+description = "Like :tabedit but with multiple arguments."
+tags = ["vim", "plugin"]
 
 [[repos.source]]
 name = "home.files"
@@ -249,6 +249,12 @@ description = "My GitHub page."
 tags = ["pug", "scss", "site"]
 
 [[repos.fork]]
+name = "htmls"
+source = "https://github.com/Daiz/htmls"
+description = "LiveScript HTML template engine."
+tags = ["livescript", "template"]
+
+[[repos.fork]]
 name = "discord.nvim"
 source = "https://github.com/aurieh/discord.nvim"
 description = "Discord Rich Presence for Neovim."
@@ -259,12 +265,6 @@ name = "nvim-snippy"
 source = "https://github.com/mg979/nvim-snippy"
 description = "Snippet plugin for Neovim."
 tags = ["vim", "lua", "plugin"]
-
-[[repos.fork]]
-name = "htmls"
-source = "https://github.com/Daiz/htmls"
-description = "LiveScript HTML template engine."
-tags = ["livescript", "template"]
 
 [[repos.organisation]]
 name = "nvim-treesitter/nvim-treesitter"
@@ -285,11 +285,6 @@ tags = ["python", "django", "scss", "javascript", "site", "manga"]
 name = "mangadventure/discord-webhook"
 description = "Discord webhook action."
 tags = ["bash", "cli", "discord"]
-
-[[repos.organisation]]
-name = "mangadventure/paperback-extensions"
-description = "MangAdventure extensions for Paperback-iOS."
-tags = ["typescript", "ios", "plugin", "manga"]
 
 [[repos.organisation]]
 name = "mangadventure/font"
@@ -315,11 +310,6 @@ tags = ["docs", "tutorial"]
 name = "bb010g/betterdiscordctl"
 description = "A utility for managing BetterDiscord on Linux."
 tags = ["bash", "cli", "app", "discord"]
-
-[[repos.contribution]]
-name = "tachiyomiorg/tachiyomi-extensions"
-description = "Extension catalogues for the Tachiyomi app."
-tags = ["kotlin", "android", "plugin", "manga"]
 
 [[repos.contribution]]
 name = "vim/vim"
@@ -370,6 +360,11 @@ tags = ["vim", "plugin"]
 name = "cakebaker/scss-syntax.vim"
 description = "Vim syntax file for SCSS."
 tags = ["vim", "plugin"]
+
+[[repos.contribution]]
+name = "Skittyblock/aidoku-community-sources"
+description = "Public sources for the Aidoku application."
+tags = ["rust", "ios", "plugin", "manga"]
 
 [[repos.contribution]]
 name = "pacman/pacman-contrib"
