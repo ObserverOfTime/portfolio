@@ -217,6 +217,11 @@ description = "Python enums infused with magic."
 tags = ["python", "library"]
 
 [[repos.source]]
+name = "tachiyomi-extensions"
+description = "Various extensions for Tachiyomi."
+tags = ["kotlin", "android", "plugin", "manga"]
+
+[[repos.source]]
 name = "multiedit.vim"
 description = "Like :tabedit but with multiple arguments."
 tags = ["vim", "plugin"]
@@ -282,6 +287,11 @@ description = "A simple manga hosting CMS written in Django."
 tags = ["python", "django", "scss", "javascript", "site", "manga"]
 
 [[repos.organisation]]
+name = "mangadventure/paperback-extensions"
+description = "MangAdventure extensions for Paperback-iOS."
+tags = ["typescript", "ios", "plugin", "manga"]
+
+[[repos.organisation]]
 name = "mangadventure/discord-webhook"
 description = "Discord webhook action."
 tags = ["bash", "cli", "discord"]
@@ -337,6 +347,11 @@ description = "Non-judgmental guidance on choosing a license for your open sourc
 tags = ["ruby", "site"]
 
 [[repos.contribution]]
+name = "apple/tree-sitter-pkl"
+description = "Pkl grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.contribution]]
 name = "fwcd/tree-sitter-kotlin"
 description = "Kotlin grammar for tree-sitter."
 tags = ["tree-sitter", "javascript", "library"]
@@ -367,16 +382,26 @@ description = "Public sources for the Aidoku application."
 tags = ["rust", "ios", "plugin", "manga"]
 
 [[repos.contribution]]
-name = "pacman/pacman-contrib"
-url = "https://gitlab.archlinux.org/pacman/pacman-contrib/-/commits/master?author=ObserverOfTime"
-description = "Contributed scripts and tools for pacman systems."
-tags = ["vim", "plugin"]
+name = "KotatsuApp/kotatsu-parsers"
+description = "Manga parsers library for Kotlin/JVM and Android."
+tags = ["kotlin", "android", "library", "manga"]
+
+[[repos.contribution]]
+name = "subject-f/cubarimoe"
+description = "An image proxy powered by the Cubari reader."
+tags = ["python", "site", "manga"]
 
 [[repos.contribution]]
 name = "peppercarrot/webcomics"
 url = "https://framagit.org/peppercarrot/webcomics/-/commits/master?author=Observer+of+Time"
 description = "A free, libre and open-source webcomic."
 tags = ["webcomic", "translation"]
+
+[[repos.contribution]]
+name = "pacman/pacman-contrib"
+url = "https://gitlab.archlinux.org/pacman/pacman-contrib/-/commits/master?author=ObserverOfTime"
+description = "Contributed scripts and tools for pacman systems."
+tags = ["vim", "plugin"]
 
 [[repos.contribution]]
 name = "python-poetry/poetry"
@@ -392,11 +417,6 @@ tags = ["python", "gui", "app"]
 name = "SciADV-Community/maho-bot"
 description = "Fun utility bot for Discord."
 tags = ["python", "discord", "bot"]
-
-[[repos.contribution]]
-name = "subject-f/cubarimoe"
-description = "An image proxy powered by the Cubari reader."
-tags = ["python", "site"]
 
 [[repos.contribution]]
 name = "hitomi-team/discord-ipc-bridge"
