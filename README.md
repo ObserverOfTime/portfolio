@@ -7,7 +7,7 @@ Reusable portfolio website written in [Svelte][].
 ## TODO
 
 * [ ] Repo filters
-* [ ] SEO meta tags
+* [x] SEO meta tags
 * [ ] Custom themes
 * [ ] [Translations][i18n]
 * [ ] Instructions
@@ -16,10 +16,14 @@ Reusable portfolio website written in [Svelte][].
 
 ## Changelog
 
+### v0.3.6
+
+* Added SEO meta tags
+
 ### v0.3.5
 
 * Fixed GitHub contribution links
-* Update YouTube profile links
+* Updated YouTube profile links
 
 ### v0.3.4
 

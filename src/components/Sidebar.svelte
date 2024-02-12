@@ -66,7 +66,7 @@
       <nav id="social" class="links">
         <h3>Social Platforms</h3>
         {#each links.social as icon}
-          <Icon {...icon}/>
+          <Icon {...icon} rel="me"/>
         {/each}
       </nav>
       <nav id="vcs" class="links">

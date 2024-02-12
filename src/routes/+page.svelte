@@ -18,18 +18,12 @@
     background-color: #252525;
     font-family: 'Fira Sans', sans-serif;
   }
-  :global(ol),
-  :global(ul) {
+  :global(ol, ul) {
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  :global(h1),
-  :global(h2),
-  :global(h3),
-  :global(h4),
-  :global(h5),
-  :global(h6) {
+  :global(h1, h2, h3, h4, h5, h6) {
     margin: 0;
     padding: 0 0 0.1em;
     font-weight: inherit;
@@ -68,6 +62,19 @@
 
 <svelte:head>
   <meta http-equiv="Last-Modified" content={new Date().toGMTString()}>
+  {#if config.info.bio}
+    <meta name="description" content={config.info.bio.replaceAll('\n', ' ')}>
+    <meta property="og:description" content={config.info.bio.replaceAll('\n', ' ')}>
+  {/if}
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  {#if config.links.social.twitter}
+    <meta name="twitter:site" content="@{config.links.social.twitter}">
+  {/if}
+  <meta property="og:image" content={config.url.replace(/\/$/, '/avatar.jpg')}>
+  <meta property="og:url" content={config.url}>
+  <meta property="og:title" content="Portfolio">
+  <meta name="author" content={config.info.name}>
   <title>{config.info.name} - Portfolio</title>
 </svelte:head>
 

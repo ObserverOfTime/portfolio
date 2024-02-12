@@ -27,7 +27,7 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite dev --host",
-    "lint:css": "stylelint src/**/*.svelte",
+    "lint:css": "stylelint static/*.css src/**/*.svelte",
     "lint:js": "eslint *.js src --ext .js,.svelte",
     "preview": "vite preview --host"
   },

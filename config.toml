@@ -1,5 +1,7 @@
 #:schema ./config.schema.json
 
+url="https://observeroftime.github.io/portfolio/"
+
 [info]
 bio = """
 Open source enthusiast, Kotlin evangelist, Vim extraordinaire.
@@ -13,7 +15,7 @@ resume = "https://registry.jsonresume.org/ObserverOfTime?theme=relaxed"
 # https://www.facebook.com/{facebook}
 facebook = ""
 # https://www.linkedin.com/in/{linkedin}
-linkedin = "chronobserver"
+linkedin = ""
 # https://reddit.com/user/{reddit}
 reddit = "ObserverOfTime"
 # https://trello.com/{trello}
@@ -87,11 +89,11 @@ sourcehut = ""
 # https://aur.archlinux.org/packages/?SeB=M&K={aur}
 aur = "ObserverOfTime"
 # https://copr.fedorainfracloud.org/coprs/{copr}
-copr = "observeroftime"
+copr = ""
 # https://metacpan.org/author/{cpan}
 cpan = ""
 # https://crates.io/users/{crates}
-crates = ""
+crates = "ObserverOfTime"
 # https://ctan.org/home/{ctan}
 ctan = ""
 # https://hub.docker.com/publishers/{docker}
@@ -99,7 +101,7 @@ docker = ""
 # https://github.com/{gpr}?tab=packages
 gpr = ""
 # https://launchpad.net/~{launchpad}
-launchpad = "chronobserver"
+launchpad = ""
 # https://www.npmjs.com/~{npmjs}
 npmjs = "chronobserver"
 # https://www.nuget.org/profiles/{nuget}
@@ -145,66 +147,6 @@ tags = ["lua", "vim", "plugin"]
 name = "notifications.nvim"
 description = "Neovim plugin for desktop notifications."
 tags = ["lua", "vim", "plugin"]
-
-[[repos.source]]
-name = "tree-sitter-xml"
-description = "XML & DTD grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
-
-[[repos.source]]
-name = "tree-sitter-gitattributes"
-description = "gitattributes grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
-
-[[repos.source]]
-name = "tree-sitter-pymanifest"
-description = "PyPA manifest grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "python", "library"]
-
-[[repos.source]]
-name = "tree-sitter-requirements"
-description = "pip requirements grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "python", "library"]
-
-[[repos.source]]
-name = "tree-sitter-chatito"
-description = "Chatito grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
-
-[[repos.source]]
-name = "tree-sitter-arduino"
-description = "Arduino grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
-
-[[repos.source]]
-name = "tree-sitter-ssh-config"
-description = "OpenSSH config grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
-
-[[repos.source]]
-name = "tree-sitter-gpg-config"
-description = "GPG config grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
-
-[[repos.source]]
-name = "tree-sitter-udev"
-description = "udev rules grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
-
-[[repos.source]]
-name = "tree-sitter-xcompose"
-description = "XCompose file grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
-
-[[repos.source]]
-name = "tree-sitter-pem"
-description = "PEM file grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
-
-[[repos.source]]
-name = "tree-sitter-poe-filter"
-description = "PoE item filter grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.source]]
 name = "poe-discord-rpc"
@@ -300,6 +242,66 @@ tags = ["bash", "cli", "discord"]
 name = "mangadventure/font"
 description = "Icon font used in MangAdventure."
 tags = ["webfont"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-xml"
+description = "XML & DTD grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-gitattributes"
+description = "gitattributes grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-pymanifest"
+description = "PyPA manifest grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "python", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-requirements"
+description = "pip requirements grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "python", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-chatito"
+description = "Chatito grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-arduino"
+description = "Arduino grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-ssh-config"
+description = "OpenSSH config grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-gpg-config"
+description = "GPG config grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-udev"
+description = "udev rules grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-xcompose"
+description = "XCompose file grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-pem"
+description = "PEM file grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-poe-filter"
+description = "PoE item filter grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.organisation]]
 name = "TodokanaiTL/WA2EnglishPatch"

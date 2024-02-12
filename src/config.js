@@ -1,7 +1,12 @@
 import config from '../config.toml';
 
 /** @type {Config} */
-const copy = {info: config.info, links: {}, repos: {}};
+const copy = {
+  url: config.url,
+  info: config.info,
+  links: {},
+  repos: {}
+};
 
 /**
  * Map usernames to links.
@@ -174,9 +179,10 @@ copy.repos = Object.keys(config.repos).reduce((acc, key) =>
 
 /**
  * @typedef {Object} Config
+ * @property {string} url The canonical URL of the portfolio.
  * @property {Record<string, string>} info The user's general info.
  * @property {Record<string, Link[]>} links The user's links.
  * @property {Repo[]} repos The user's repositories.
  */
 
-export const {info, links, repos} = copy;
+export const {url, info, links, repos} = copy;
