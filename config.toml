@@ -244,6 +244,11 @@ description = "Icon font used in MangAdventure."
 tags = ["webfont"]
 
 [[repos.organisation]]
+name = "tree-sitter-grammars/template"
+description = "Tree-sitter parser template."
+tags = ["tree-sitter", "template"]
+
+[[repos.organisation]]
 name = "tree-sitter-grammars/tree-sitter-xml"
 description = "XML & DTD grammar for tree-sitter."
 tags = ["tree-sitter", "javascript", "library"]
@@ -387,6 +392,11 @@ tags = ["rust", "ios", "plugin", "manga"]
 name = "KotatsuApp/kotatsu-parsers"
 description = "Manga parsers library for Kotlin/JVM and Android."
 tags = ["kotlin", "android", "library", "manga"]
+
+[[repos.contribution]]
+name = "xgi/tiyo"
+description = "Library for retrieving and processing manga websites."
+tags = ["typescript", "library", "manga"]
 
 [[repos.contribution]]
 name = "subject-f/cubarimoe"
