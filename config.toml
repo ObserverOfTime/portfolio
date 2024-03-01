@@ -214,6 +214,46 @@ description = "Snippet plugin for Neovim."
 tags = ["vim", "lua", "plugin"]
 
 [[repos.organisation]]
+name = "tree-sitter/py-tree-sitter"
+description = "Python bindings to the Tree-sitter parsing library."
+tags = ["tree-sitter", "c", "python", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter/parse-action"
+description = "File parsing action for tree-sitter parsers."
+tags = ["tree-sitter", "javascript", "action"]
+
+[[repos.organisation]]
+name = "tree-sitter/fuzz-action"
+description = "Input fuzzing action for tree-sitter parsers."
+tags = ["tree-sitter", "action"]
+
+[[repos.organisation]]
+name = "tree-sitter/setup-action"
+description = "Setup action for the tree-sitter library & CLI."
+tags = ["tree-sitter", "action"]
+
+[[repos.organisation]]
+name = "tree-sitter/setup-action"
+description = "Setup action for the tree-sitter library & CLI."
+tags = ["tree-sitter", "action"]
+
+[[repos.organisation]]
+name = "tree-sitter/parser-setup-action"
+description = "Setup action for tree-sitter parsers."
+tags = ["tree-sitter", "action"]
+
+[[repos.organisation]]
+name = "tree-sitter/parser-test-action"
+description = "Test action for tree-sitter parsers."
+tags = ["tree-sitter", "action"]
+
+[[repos.organisation]]
+name = "tree-sitter/parser-update-action"
+description = "Dependency updating action for tree-sitter parsers."
+tags = ["tree-sitter", "javascript", "action"]
+
+[[repos.organisation]]
 name = "nvim-treesitter/nvim-treesitter"
 description = "Nvim Treesitter configurations and abstraction layer."
 tags = ["vim", "lua", "plugin"]
@@ -235,8 +275,8 @@ tags = ["typescript", "ios", "plugin", "manga"]
 
 [[repos.organisation]]
 name = "mangadventure/discord-webhook"
-description = "Discord webhook action."
-tags = ["bash", "cli", "discord"]
+description = "Discord webhook GitHub action."
+tags = ["discord", "action"]
 
 [[repos.organisation]]
 name = "mangadventure/font"
@@ -324,9 +364,9 @@ description = "Instructions for installing and patching White Album 2 on wine."
 tags = ["docs", "tutorial"]
 
 [[repos.contribution]]
-name = "bb010g/betterdiscordctl"
-description = "A utility for managing BetterDiscord on Linux."
-tags = ["bash", "cli", "app", "discord"]
+name = "tree-sitter/tree-sitter"
+description = "An incremental parsing system for programming tools."
+tags = ["tree-sitter", "c", "rust", "library"]
 
 [[repos.contribution]]
 name = "vim/vim"
@@ -367,6 +407,11 @@ tags = ["tree-sitter", "javascript", "library"]
 name = "lutris/lutris"
 description = "Open Source gaming platform for GNU/Linux."
 tags = ["python", "gui", "app"]
+
+[[repos.contribution]]
+name = "bb010g/betterdiscordctl"
+description = "A utility for managing BetterDiscord on Linux."
+tags = ["bash", "cli", "app", "discord"]
 
 [[repos.contribution]]
 name = "jose-elias-alvarez/null-ls.nvim"
