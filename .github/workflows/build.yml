@@ -25,16 +25,16 @@ jobs:
       - uses: actions/setup-node@v4
         name: Set up Node.js
         with:
-          cache: yarn
-      - name: Install package with yarn
-        run: yarn --frozen-lockfile
+          cache: npm
+      - name: Install package with npm
+        run: npm ci
       - name: Lint code with eslint & stylelint
-        run: yarn lint:js && yarn lint:css
+        run: npm run lint:js && npm run lint:css
         continue-on-error: true
       - name: Build site with svelte-kit
-        run: yarn build
+        run: npm run build
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: build/portfolio
 
@@ -48,4 +48,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
