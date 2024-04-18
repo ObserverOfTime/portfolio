@@ -8,7 +8,7 @@ Open source enthusiast, Kotlin evangelist, Vim extraordinaire.
 """
 email = "chronobserver@disroot.org"
 homepage = "https://observeroftime.github.io"
-name = "ObserverOfTime"
+name = "Ioannis Somos"
 resume = "https://registry.jsonresume.org/ObserverOfTime?theme=relaxed"
 
 [links.social]
@@ -114,6 +114,11 @@ pypi = "ObserverOfTime"
 rubygems = ""
 
 [[repos.source]]
+name = "kbigint"
+description = "Kotlin Multiplatform BigInteger library."
+tags = ["kotlin", "library"]
+
+[[repos.source]]
 name = "yaenv"
 description = "Yet another dotenv parser for Python."
 tags = ["python", "django", "library"]
@@ -214,6 +219,11 @@ description = "Snippet plugin for Neovim."
 tags = ["vim", "lua", "plugin"]
 
 [[repos.organisation]]
+name = "tree-sitter/tree-sitter"
+description = "An incremental parsing system for programming tools."
+tags = ["tree-sitter", "c", "rust", "library"]
+
+[[repos.organisation]]
 name = "tree-sitter/py-tree-sitter"
 description = "Python bindings to the Tree-sitter parsing library."
 tags = ["tree-sitter", "c", "python", "library"]
@@ -262,26 +272,6 @@ tags = ["vim", "lua", "plugin"]
 name = "nvim-treesitter/nvim-treesitter-textobjects"
 description = "Syntax aware text-objects, select, move, swap, and peek support."
 tags = ["vim", "lua", "plugin"]
-
-[[repos.organisation]]
-name = "mangadventure/MangAdventure"
-description = "A simple manga hosting CMS written in Django."
-tags = ["python", "django", "scss", "javascript", "site", "manga"]
-
-[[repos.organisation]]
-name = "mangadventure/paperback-extensions"
-description = "MangAdventure extensions for Paperback-iOS."
-tags = ["typescript", "ios", "plugin", "manga"]
-
-[[repos.organisation]]
-name = "mangadventure/discord-webhook"
-description = "Discord webhook GitHub action."
-tags = ["discord", "action"]
-
-[[repos.organisation]]
-name = "mangadventure/font"
-description = "Icon font used in MangAdventure."
-tags = ["webfont"]
 
 [[repos.organisation]]
 name = "tree-sitter-grammars/template"
@@ -349,6 +339,26 @@ description = "PoE item filter grammar for tree-sitter."
 tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.organisation]]
+name = "mangadventure/MangAdventure"
+description = "A simple manga hosting CMS written in Django."
+tags = ["python", "django", "scss", "javascript", "site", "manga"]
+
+[[repos.organisation]]
+name = "mangadventure/paperback-extensions"
+description = "MangAdventure extensions for Paperback-iOS."
+tags = ["typescript", "ios", "plugin", "manga"]
+
+[[repos.organisation]]
+name = "mangadventure/discord-webhook"
+description = "Discord webhook GitHub action."
+tags = ["discord", "action"]
+
+[[repos.organisation]]
+name = "mangadventure/font"
+description = "Icon font used in MangAdventure."
+tags = ["webfont"]
+
+[[repos.organisation]]
 name = "TodokanaiTL/WA2EnglishPatch"
 description = "White Album 2 English patch installer."
 tags = ["inno", "installer", "gui", "app"]
@@ -364,11 +374,6 @@ description = "Instructions for installing and patching White Album 2 on wine."
 tags = ["docs", "tutorial"]
 
 [[repos.contribution]]
-name = "tree-sitter/tree-sitter"
-description = "An incremental parsing system for programming tools."
-tags = ["tree-sitter", "c", "rust", "library"]
-
-[[repos.contribution]]
 name = "vim/vim"
 description = "The ubiquitous text editor."
 tags = ["vim", "tui", "app"]
@@ -377,6 +382,21 @@ tags = ["vim", "tui", "app"]
 name = "neovim/neovim"
 description = "Vim fork focused on extensibility and usability."
 tags = ["vim", "tui", "app"]
+
+[[repos.contribution]]
+name = "neovim/tree-sitter-vimdoc"
+description = "Vim help file grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.contribution]]
+name = "apple/tree-sitter-pkl"
+description = "Pkl grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.contribution]]
+name = "fwcd/tree-sitter-kotlin"
+description = "Kotlin grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.contribution]]
 name = "github/linguist"
@@ -392,16 +412,6 @@ tags = ["docs"]
 name = "github/choosealicense.com"
 description = "Non-judgmental guidance on choosing a license for your open source project."
 tags = ["ruby", "site"]
-
-[[repos.contribution]]
-name = "apple/tree-sitter-pkl"
-description = "Pkl grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
-
-[[repos.contribution]]
-name = "fwcd/tree-sitter-kotlin"
-description = "Kotlin grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.contribution]]
 name = "lutris/lutris"
