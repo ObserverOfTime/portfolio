@@ -229,6 +229,16 @@ description = "Python bindings to the Tree-sitter parsing library."
 tags = ["tree-sitter", "c", "python", "library"]
 
 [[repos.organisation]]
+name = "tree-sitter/kotlin-tree-sitter"
+description = "kotlin bindings to the tree-sitter parsing library."
+tags = ["tree-sitter", "c", "kotlin", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter/java-tree-sitter"
+description = "Java bindings to the Tree-sitter parsing library."
+tags = ["tree-sitter", "java", "library"]
+
+[[repos.organisation]]
 name = "tree-sitter/parse-action"
 description = "File parsing action for tree-sitter parsers."
 tags = ["tree-sitter", "javascript", "action"]
