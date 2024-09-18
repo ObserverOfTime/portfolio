@@ -31,8 +31,8 @@ youtube = "chronobserver"
 
 [links.social.matrix]
 # https://matrix.to/#/@{username}:{server}
-username = "instrumentalist"
-server = "yuri.im"
+username = "observeroftime"
+server = "mozilla.org"
 
 [links.social.mastodon]
 # https://{server}/@{username}
