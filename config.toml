@@ -165,6 +165,7 @@ tags = ["python", "library"]
 
 [[repos.source]]
 name = "tachiyomi-extensions"
+url = "https://framagit.org/ObserverOfTime/tachiyomi-extensions"
 description = "Various extensions for Tachiyomi."
 tags = ["kotlin", "android", "plugin", "manga"]
 
@@ -230,7 +231,7 @@ tags = ["tree-sitter", "c", "python", "library"]
 
 [[repos.organisation]]
 name = "tree-sitter/kotlin-tree-sitter"
-description = "kotlin bindings to the tree-sitter parsing library."
+description = "Kotlin bindings to the Tree-sitter parsing library."
 tags = ["tree-sitter", "c", "kotlin", "library"]
 
 [[repos.organisation]]
