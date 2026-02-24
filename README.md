@@ -16,6 +16,11 @@ Reusable portfolio website written in [Svelte][].
 
 ## Changelog
 
+### v0.4.0
+
+* Updated svelte-kit configuration
+* Updated eslint & stylelint configuration
+
 ### v0.3.6
 
 * Added SEO meta tags
@@ -102,7 +107,7 @@ Reusable portfolio website written in [Svelte][].
 
 ## License
 
-> Copyright (c) 2019-2023 ObserverOfTime
+> Copyright (c) 2019-2026 ObserverOfTime
 >
 > This Source Code Form is subject to the terms of the Mozilla Public
 > License, v. 2.0. If a copy of the MPL was not distributed with this

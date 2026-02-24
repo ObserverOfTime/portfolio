@@ -44,7 +44,7 @@
   <span class="repo-type">{repo.type}</span>
   <p class="repo-desc">{repo.description}</p>
   <div class="repo-tags">
-    {#each repo.tags as tag}
+    {#each repo.tags as tag (tag)}
       <span class="repo-tag">{tag}</span>
     {/each}
   </div>

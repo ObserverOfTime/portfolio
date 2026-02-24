@@ -17,7 +17,7 @@
 
 <main id="main">
   <div id="repos">
-    {#each repos as repo}
+    {#each repos as repo (repo.name)}
       <Repository {repo}/>
     {/each}
   </div>

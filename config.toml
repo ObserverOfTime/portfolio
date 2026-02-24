@@ -208,6 +208,12 @@ description = "LiveScript HTML template engine."
 tags = ["livescript", "template"]
 
 [[repos.fork]]
+name = "zig-tree-sitter"
+source = "https://github.com/tree-sitter/zig-tree-sitter"
+description = "Zig bindings to the Tree-sitter parsing library."
+tags = ["tree-sitter", "zig", "library"]
+
+[[repos.fork]]
 name = "discord.nvim"
 source = "https://github.com/aurieh/discord.nvim"
 description = "Discord Rich Presence for Neovim."
@@ -247,11 +253,6 @@ tags = ["tree-sitter", "javascript", "action"]
 [[repos.organisation]]
 name = "tree-sitter/fuzz-action"
 description = "Input fuzzing action for tree-sitter parsers."
-tags = ["tree-sitter", "action"]
-
-[[repos.organisation]]
-name = "tree-sitter/setup-action"
-description = "Setup action for the tree-sitter library & CLI."
 tags = ["tree-sitter", "action"]
 
 [[repos.organisation]]
@@ -505,3 +506,8 @@ tags = ["c", "wine", "discord", "app"]
 name = "openstyles/usercss-meta"
 description = "Parse usercss styles supported by the Stylus userstyle manager."
 tags = ["javascript", "node", "library"]
+
+[[repos.contribution]]
+name = "mthcht/awesome-lists"
+description = "Awesome Security lists for SOC/CERT/CTI."
+tags = ["list"]

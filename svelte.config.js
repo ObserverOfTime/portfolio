@@ -12,13 +12,6 @@ export default {
       pages: 'build/portfolio',
       assets: 'build/portfolio'
     }),
-    files: {
-      assets: 'static',
-      lib: 'src/components',
-      routes: 'src/routes',
-      serviceWorker: 'src/service-worker.js',
-      appTemplate: 'src/template.html'
-    },
     paths: {
       base: '/portfolio',
       relative: false

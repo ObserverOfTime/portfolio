@@ -65,19 +65,19 @@
       <img id="avatar" src="/portfolio/avatar.jpg" alt="Avatar">
       <nav id="social" class="links">
         <h3>Social Platforms</h3>
-        {#each links.social as icon}
+        {#each links.social as icon (icon.icon)}
           <Icon {...icon} rel="me"/>
         {/each}
       </nav>
       <nav id="vcs" class="links">
         <h3>Version Control Systems</h3>
-        {#each links.vcs as icon}
+        {#each links.vcs as icon (icon.icon)}
           <Icon {...icon}/>
         {/each}
       </nav>
       <nav id="packages" class="links">
         <h3>Package Registries</h3>
-        {#each links.packages as icon}
+        {#each links.packages as icon (icon.icon)}
           <Icon {...icon}/>
         {/each}
       </nav>

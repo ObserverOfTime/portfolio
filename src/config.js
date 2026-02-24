@@ -5,7 +5,7 @@ const copy = {
   url: config.url,
   info: config.info,
   links: {},
-  repos: {}
+  repos: []
 };
 
 /**
