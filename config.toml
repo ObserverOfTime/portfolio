@@ -197,6 +197,11 @@ description = "Simple program for creating a custom Discord RPC on Linux."
 tags = ["c", "cli", "discord"]
 
 [[repos.source]]
+name = "malspam-analysis"
+description = "My malware analysis blog."
+tags = ["markdown", "site"]
+
+[[repos.source]]
 name = "observeroftime.github.io"
 description = "My GitHub page."
 tags = ["pug", "scss", "site"]
