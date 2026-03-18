@@ -175,6 +175,11 @@ description = "Like :tabedit but with multiple arguments."
 tags = ["vim", "plugin"]
 
 [[repos.source]]
+name = "highlightjs-cyberchef"
+description = "CyberChef recipe grammar for highlight.js."
+tags = ["highlightjs", "javascript", "library"]
+
+[[repos.source]]
 name = "home.files"
 description = "My dotfiles."
 tags = ["config", "dotfiles", "mpv", "arch"]
@@ -308,12 +313,12 @@ tags = ["tree-sitter", "javascript", "library"]
 [[repos.organisation]]
 name = "tree-sitter-grammars/tree-sitter-pymanifest"
 description = "PyPA manifest grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "python", "library"]
+tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.organisation]]
 name = "tree-sitter-grammars/tree-sitter-requirements"
 description = "pip requirements grammar for tree-sitter."
-tags = ["tree-sitter", "javascript", "python", "library"]
+tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.organisation]]
 name = "tree-sitter-grammars/tree-sitter-chatito"
@@ -353,6 +358,11 @@ tags = ["tree-sitter", "javascript", "library"]
 [[repos.organisation]]
 name = "tree-sitter-grammars/tree-sitter-poe-filter"
 description = "PoE item filter grammar for tree-sitter."
+tags = ["tree-sitter", "javascript", "library"]
+
+[[repos.organisation]]
+name = "tree-sitter-grammars/tree-sitter-cyberchef"
+description = "CyberChef recipe grammar for tree-sitter."
 tags = ["tree-sitter", "javascript", "library"]
 
 [[repos.organisation]]
@@ -429,6 +439,11 @@ tags = ["docs"]
 name = "github/choosealicense.com"
 description = "Non-judgmental guidance on choosing a license for your open source project."
 tags = ["ruby", "site"]
+
+[[repos.contribution]]
+name = "microsoft/winget-pkgs"
+description = "The Microsoft community Windows Package Manager manifest repository."
+tags = ["manifest"]
 
 [[repos.contribution]]
 name = "lutris/lutris"
