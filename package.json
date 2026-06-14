@@ -35,7 +35,7 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@stylistic/stylelint-plugin": "^5.0.1",
     "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/kit": "^2.55.0",
+    "@sveltejs/kit": "^2.65.1",
     "@sveltejs/vite-plugin-svelte": "^6.2.4",
     "eslint": "^10.0.3",
     "eslint-plugin-svelte": "^3.15.2",
